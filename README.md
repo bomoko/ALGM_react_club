@@ -17,7 +17,7 @@ We're going to be building a simple TODO application through several iterations.
 2. Work through the official [React tutorial](https://reactjs.org/tutorial/tutorial.html) if you haven't already - this will teach you pretty much all the techniques you need for this first week - you can stop just before the section on "Adding Time Travel".
 3. While the React tutorial uses Codepen as a base, we should be writing locally - a good project to use to bootstrap your own project is [Create React App](https://github.com/facebook/create-react-app).
 4. If you hit any issues, pop a question in Training and tag Blaize or Mustapha, we'll come a'running.
-
+5. (OPTIONAL) Set up automated testing, drive the dev using TDD (might be useful for those of us who are a little more comfortable with basic React).
 
 ### Week 2 - Add a backend
 
