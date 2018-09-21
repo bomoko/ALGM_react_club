@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TodoListData from './endpoint/data';
 import TodoList from './components/TodoList';
 
 const App = () => (
@@ -13,7 +14,7 @@ const App = () => (
       What do you need to do?
     </p>
 
-    <TodoList />
+    <TodoList data={TodoListData} />
   </div>
 );
 
