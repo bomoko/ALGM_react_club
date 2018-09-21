@@ -1,9 +1,13 @@
 import React from 'react';
 import TodoItem from './TodoItem';
 
-const TodoList = () => (
+const TodoList = ({data}) => (
   <ul>
-    <TodoItem />
+    {data.map(
+      (item, index) => (
+        <TodoItem key={index} itemData={item} />
+      )
+    )}
   </ul>
 );
 

@@ -15,6 +15,7 @@ const App = () => (
     </p>
 
     <TodoList data={TodoListData} />
+
   </div>
 );
 

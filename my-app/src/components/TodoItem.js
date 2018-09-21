@@ -1,10 +1,8 @@
 import React from 'react';
 
-const TodoItem = () => {
+const TodoItem = ({itemData}) => {
   return (
-    <li>
-        listitem
-    </li>
+    <li>{itemData.text}</li>
   );
 };
 
