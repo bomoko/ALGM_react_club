@@ -1,8 +1,14 @@
 import React from 'react';
+import TodoInput from './TodoInput';
 
 const TodoItem = ({itemData}) => {
   return (
-    <li>{itemData.text}</li>
+    <li>
+      <label>
+        <TodoInput checked={itemData.checked} />
+        {itemData.text}
+      </label>
+    </li>
   );
 };
 
