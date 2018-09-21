@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import TodoListData from './endpoint/data';
 import TodoList from './components/TodoList';
+import TodoInput from './components/TodoInput';
 
 const App = () => (
   <div className="App">
@@ -15,6 +16,7 @@ const App = () => (
     </p>
 
     <TodoList data={TodoListData} />
+    <TodoInput />
 
   </div>
 );

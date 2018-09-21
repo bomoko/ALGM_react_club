@@ -42,3 +42,11 @@ li {
   padding: 10px;
   width: 90%;
 }
+
+input[type="text"] {
+  background-color: #f2f2f2;
+  border: 1px solid #efefef;
+  border-radius: 4px;
+  padding: 10px;
+  width: 90%;
+}

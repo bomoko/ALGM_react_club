@@ -1,8 +1,11 @@
 import React from 'react';
 
-const TodoInput = ({ checked }) => {
+const TodoInput= () => {
   return (
-    <input type="checkbox" checked={checked} />
+    <label>
+      <input type="text" value="" placeholder="Add a new todo" />
+    </label>
+
   );
 };
 
