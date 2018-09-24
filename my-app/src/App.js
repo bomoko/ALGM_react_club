@@ -11,13 +11,19 @@ const App = () => (
       <img src={logo} className="App-logo" alt="logo" />
       <h1 className="App-title">TODOs</h1>
     </header>
-    <p className="App-intro">
-      What do you need to do?
-    </p>
 
-    <TodoList data={TodoListData} />
-    <TodoInput />
+    <main>
+      <p className="App-intro">
+        What do you need to do?
+      </p>
 
+      <TodoList data={TodoListData} />
+
+      <form onSubmit={this.addItem}>
+        <TodoInput onChange={this.editInput} />
+      </form>
+
+    </main>
   </div>
 );
 

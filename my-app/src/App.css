@@ -27,6 +27,11 @@
   to { transform: rotate(360deg); }
 }
 
+main {
+  margin: auto;
+  max-width: 960px;
+}
+
 ul {
   list-style-type: none;
   margin: 0 auto 20px;

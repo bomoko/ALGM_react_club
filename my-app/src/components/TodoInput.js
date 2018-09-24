@@ -5,7 +5,6 @@ const TodoInput= () => {
     <label>
       <input type="text" value="" placeholder="Add a new todo" />
     </label>
-
   );
 };
 
