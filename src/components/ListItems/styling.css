@@ -1,0 +1,11 @@
+.todo-app-list-item {
+    margin: 10px;
+}
+
+.todo-app-list-item span {
+    padding: 0 10px;
+}
+
+.todo-app-list-item-description.complete {
+    text-decoration: line-through;
+}
