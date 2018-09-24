@@ -19,8 +19,6 @@ class App extends Component {
     this.state = {
       items: this.todoList.getItems()
     }
-
-    this.populateItems = this.populateItems.bind(this);
   }
 
   populateItems(items) {
@@ -41,12 +39,12 @@ class App extends Component {
             <li>Using the OO approach to defining components (no pure functions)</li>
             <li>No styling - just enough to actually use the damn thing</li>
           </ul>
-          <TodoApp items={this.state.items} 
+        </div>
+        <TodoApp items={this.state.items} 
                     addItem={(text) => {this.todoList.addItem(text);}} 
                     checkItem={(i) => {this.todoList.checkItem(i);}} 
                     removeItem={ (i) => {this.todoList.removeItem(i);}
           }/>
-        </div>
       </div>
     );
   }
