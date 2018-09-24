@@ -7,13 +7,40 @@ import TodoInput from './components/TodoInput';
 
 class App extends React.Component {
   state = {
+    items: TodoListData,
     inputValue: "",
   };
 
   onInputChange = event =>
     this.setState({
-    inputValue: event.target.value
-  });
+      inputValue: event.target.value
+    });
+
+  // Add an item
+  addItem = (event) => {
+    event.preventDefault();
+    this.setState({
+      items: this.state.items.concat([{
+        text: this.state.inputValue,
+        checked: false,
+      }]),
+      inputValue: '',
+    });
+  }
+
+  // Check an item
+  // checkItem = (text) => {
+  //   this.setState({
+  //     items: this.state.items.map(item => {
+  //       if (item.text !== text) return item;
+
+  //       return {
+  //         ...item,
+  //         checked: !item.checked,
+  //       };
+  //     }),
+  //   });
+  // }
 
   render() {
     const { inputValue, onInputChange } = this.state;
@@ -29,9 +56,9 @@ class App extends React.Component {
             What do you need to do?
           </p>
 
-          <TodoList data={TodoListData} />
+          <TodoList data={this.state.items} onCheckboxChange={this.checkInputValue} />
 
-          <form>
+          <form onSubmit={this.addItem}>
             <TodoInput value={inputValue} onChange={this.onInputChange} />
           </form>
 

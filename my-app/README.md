@@ -1,13 +1,12 @@
 # Stew's marvelous making of a React Club Todo List.
 
 ## Step 1:
-A. Add basic components to handle the display of a TodoList, TodoItem and an input.
-B. Add State or Recompose via HOC - Currently here, still deciding.
-C. Make the app able to accept user input and display that...
+* A. Add basic components to handle the display of a TodoList, TodoItem and an input.
+* B. Add State or Recompose via HOC. Chose to use Functional components as much as possible. With step one state on top Component.
+* C. Make the app able to accept user input and display that... Currently here
+* D. Make App add the input aftret submission to the list of Todos
 
-
-
-
+_________________________________________________________
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
