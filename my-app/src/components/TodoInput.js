@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TodoInput = ({value, onChange}) => (
+const TodoInput = ({ value, onChange}) => (
   <label>
     <input type="text"
       value={value}

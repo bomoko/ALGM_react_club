@@ -9,11 +9,17 @@ class App extends React.Component {
   state = {
     items: TodoListData,
     inputValue: "",
+    checkedValue: "",
   };
 
   onInputChange = event =>
     this.setState({
       inputValue: event.target.value
+    });
+
+  onCheckboxChange = event =>
+    this.setState({
+      checkedValue: event.target.value
     });
 
   // Add an item
@@ -29,21 +35,21 @@ class App extends React.Component {
   }
 
   // Check an item
-  // checkItem = (text) => {
-  //   this.setState({
-  //     items: this.state.items.map(item => {
-  //       if (item.text !== text) return item;
+  checkItem = (text) => {
+    this.setState({
+      items: this.state.items.map(item => {
+        if (item.text !== text) return item;
 
-  //       return {
-  //         ...item,
-  //         checked: !item.checked,
-  //       };
-  //     }),
-  //   });
-  // }
+        return {
+          ...item,
+          checked: !item.checked,
+        };
+      }),
+    });
+  }
 
   render() {
-    const { inputValue, onInputChange } = this.state;
+    const { inputValue } = this.state;
     return (
       <div className="App">
         <header className="App-header">
@@ -56,7 +62,7 @@ class App extends React.Component {
             What do you need to do?
           </p>
 
-          <TodoList data={this.state.items} onCheckboxChange={this.checkInputValue} />
+          <TodoList data={this.state.items} onClick={this.checkItem}/>
 
           <form onSubmit={this.addItem}>
             <TodoInput value={inputValue} onChange={this.onInputChange} />

@@ -1,12 +1,11 @@
 import React from 'react';
-import TodoCheckBox from './TodoCheckBox';
 
 const TodoItem = ({ itemData }) => {
   return (
     <li>
       <label>
-        <TodoCheckBox checkedProps={itemData.checked} />
-        {itemData.text}
+        <input type="checkbox" checked={itemData.checked} onClick={this.onChange}/>
+        &nbsp;{itemData.text}
       </label>
     </li>
   );
