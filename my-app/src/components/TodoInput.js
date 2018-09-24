@@ -1,11 +1,13 @@
 import React from 'react';
 
-const TodoInput= () => {
-  return (
-    <label>
-      <input type="text" value="" placeholder="Add a new todo" />
-    </label>
-  );
-};
+const TodoInput = ({value, onChange}) => (
+  <label>
+    <input type="text"
+      name={value}
+      placeholder="Get this done"
+      onChange={onChange}
+    />
+  </label>
+);
 
 export default TodoInput;

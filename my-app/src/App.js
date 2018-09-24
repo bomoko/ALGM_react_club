@@ -5,26 +5,40 @@ import TodoListData from './endpoint/data';
 import TodoList from './components/TodoList';
 import TodoInput from './components/TodoInput';
 
-const App = () => (
-  <div className="App">
-    <header className="App-header">
-      <img src={logo} className="App-logo" alt="logo" />
-      <h1 className="App-title">TODOs</h1>
-    </header>
+class App extends React.Component {
+  state = {
+    inputValue: "",
+  };
 
-    <main>
-      <p className="App-intro">
-        What do you need to do?
-      </p>
+  onInputChange = event =>
+    this.setState({
+    inputValue: event.target.value
+  });
 
-      <TodoList data={TodoListData} />
+  render() {
+    const { inputValue, onInputChange } = this.state;
+    return (
+      <div className="App">
+        <header className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h1 className="App-title">TODOs</h1>
+        </header>
 
-      <form onSubmit={this.addItem}>
-        <TodoInput onChange={this.editInput} />
-      </form>
+        <main>
+          <p className="App-intro">
+            What do you need to do?
+          </p>
 
-    </main>
-  </div>
-);
+          <TodoList data={TodoListData} />
+
+          <form>
+            <TodoInput value={inputValue} onChange={this.onInputChange} />
+          </form>
+
+        </main>
+      </div>
+    );
+  }
+}
 
 export default App;
