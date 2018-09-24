@@ -12,7 +12,7 @@ class AddTodo extends Component {
     return (
       <div className="AddTodo">
         <input type="text" value={this.state.inputValue} onChange={evt => this.updateInputValue(evt)} />
-        <button onClick={() => this.addItem()}>Add</button>
+        <button onClick={() => this.addItem()}>+</button>
       </div>
     );
   }

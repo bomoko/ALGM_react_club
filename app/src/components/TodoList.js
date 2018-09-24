@@ -5,24 +5,17 @@ class TodoList extends Component {
   render() {
     return (
       <div className="TodoList">
-        <h3>Todo List Items</h3>
-
-        {!this.props.list.length ? 'No tasks' : '' }
+        {!this.props.list.length ? 
+            <p>Nothing to do</p> : 
+            <br/> 
+        }
 
         {this.props.list.map(function(value, index) {
-            return <TodoItem key={'item'+index} item={value} deleteItem={this.deleteItem} />
+            return <TodoItem key={'item'+index} item={value} deleteItem={this.props.deleteItem} />
         }, this)}
       </div>
     );
   }
-
-  deleteItem(element) {
-    var index = this.props.list.indexOf(element);
-    if (index > -1) {
-        this.props.list.splice(index, 1);
-    }
-  }
-
 }
 
 export default TodoList;
