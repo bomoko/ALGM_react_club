@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import TodoCheckBox from './TodoCheckBox';
 class TodoItem extends Component {
   onClick = () => {
     this.props.onClick(this.props.text);
@@ -9,7 +9,7 @@ class TodoItem extends Component {
     return (
       <li key={this.key}>
         <label>
-          <input type="checkbox" checked={this.props.checked} onChange={this.onClick} />
+          <TodoCheckBox checked={this.props.checked} onChange={this.onClick} />
           &nbsp;{this.props.text}
         </label>
       </li>

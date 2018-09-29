@@ -1,8 +1,9 @@
 import React from 'react';
 
-const TodoCheckBox = ({ checkedProps }) => {
+const TodoCheckBox = ({ checked, onChange }) => {
   return (
-    <input type="checkbox" checked={checkedProps} onChange={this.onCheckboxChange} />
+    <input type="checkbox" checked={checked} onChange={onChange} />
+
   );
 };
 
