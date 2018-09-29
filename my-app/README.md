@@ -3,8 +3,19 @@
 ## Step 1:
 * A. Add basic components to handle the display of a TodoList, TodoItem and an input.
 * B. Add State or Recompose via HOC. Chose to use Functional components as much as possible. With step one state on top Component.
-* C. Make the app able to accept user input and display that... Currently here
-* D. Make App add the input aftret submission to the list of Todos
+* C. Make the app able to accept user input and display that...
+* D. Make App add the input after submission to the list of Todos
+* E. Get checkbox to click on and off - DONE!
+* F. Write tests.... Still to do.
+
+## Step 2: Add a backend
+* A. Add GraphQL backend
+* B. Get the React Todo Items to show with GraphQL as endpoint - Currently here!
+* C. Update the setState to do mutations on GraphQL.
+* D. Do better Error handling
+* E. Put GraphQL on Google Apps Spot
+* F. Try multi user adding todos
+* G. Write tests.
 
 _________________________________________________________
 

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
 import TodoInput from './TodoInput';
+
 class TodoList extends Component {
 
   state = {
@@ -42,6 +43,7 @@ class TodoList extends Component {
 
   render() {
     const { inputValue, items } = this.state;
+
     return (
       <div>
         <form>
@@ -63,26 +65,8 @@ class TodoList extends Component {
           <TodoInput value={inputValue} onChange={this.onInputChange} />
         </form>
       </div>
-    )
-  };
+    );
+  }
 }
 
 export default TodoList;
-
-// This is a function attempt
-// import React from 'react';
-// import TodoItem from './TodoItem';
-
-// const TodoList = ({ data, onClick }) => (
-//   <form>
-//     <ul>
-//       {data.map(
-//         (item, index) => (
-//           <TodoItem key={index} itemData={item} onChange={onClick} />
-//         )
-//       )}
-//     </ul>
-//   </form>
-// );
-
-// export default TodoList;
