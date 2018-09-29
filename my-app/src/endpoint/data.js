@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TodoListData = [
   {
     text: 'install create-react-app',
