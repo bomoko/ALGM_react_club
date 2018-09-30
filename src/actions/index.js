@@ -6,7 +6,7 @@
 // Type is typically written in all caps and typically describes semantically
 // what the action does.
 
-// Set initial todo id. We need to set it to 3 as there is some already 2 Todos
+// Set initial todo id. We need to set it to 3 as there is already 2 Todos
 // passed directly into the store as initial state.
 let todoId = 3;
 
