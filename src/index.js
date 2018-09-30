@@ -13,11 +13,11 @@ const initialState = {
   ]
 };
 
-// The store will hold the complete state of the whole app in tree-like
-// archititecture.
+// The store will hold the complete state of the whole app in a tree-like
+// architecture.
 
 // The store is the only place where state can be changed and this is
-// managed through by dispatching actions.
+// managed completely through dispatching actions.
 // The first param passes in the root reducer.
 // The second param is used for the Redux Chrome app.
 
