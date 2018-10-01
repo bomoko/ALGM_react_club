@@ -6,6 +6,7 @@ import App from './components/App';
 import rootReducer from './reducers';
 
 // We can set initial state and pass it straight into the createStore method.
+// @TODO: Add in some asynchronous axios calls as part of w2. 
 const initialState = {
   todosReducer: [
     {id:1, text:'This is a todo', completed: false},
