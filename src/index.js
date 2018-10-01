@@ -22,9 +22,11 @@ const initialState = {
 // The second param is used for the Redux Chrome app.
 
 // Redux gives us immutability of our state as we never actually directly
-// change the applications state. We can see instead, a copy of the change made
-// and saved as a snapshot in time. By adding in Redux Dev tools for Chrome we
-// can see the entire history/log of the applications state and when it changes.
+// change the applications state. What happens instead, is a copy of the change
+// is made and saved as a snapshot in time. This copy gets sent eventually to
+// the store through the reducers defined here for updating. By adding in Redux
+// Dev tools for Chrome we can see the entire history/log of the applications
+// state and when it changes.
 const store = createStore(
   rootReducer,
   initialState,
