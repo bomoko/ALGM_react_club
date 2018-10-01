@@ -3,26 +3,12 @@ import TodoApp from './components/TodoApp/component';
 import logo from './logo.svg';
 import TodoListManager from './TodoListManager.js';
 import './App.css';
+import {connect} from 'react-redux';
+import * as actions from './redux/actions';
 
 class App extends Component {
-
   constructor(props) {
     super(props);
-
-    this.todoList = new TodoListManager();
-    this.todoList.setStateTarget(this);
-
-    //let's add some items for show
-    this.todoList.addItem("Check off an existing item");
-    this.todoList.addItem("Add a new one with the button above");
-
-    this.state = {
-      items: this.todoList.getItems()
-    }
-  }
-
-  populateItems(items) {
-    this.setState(state => ({items: items}));
   }
 
   render() {
@@ -39,15 +25,27 @@ class App extends Component {
             <li>Using the OO approach to defining components (no pure functions)</li>
             <li>No styling - just enough to actually use the damn thing</li>
           </ul>
+          <h4>Version 2 aims</h4>
+          <ul>
+            <li>Hook up Redux</li>
+          </ul>
         </div>
-        <TodoApp items={this.state.items} 
-                    addItem={(text) => {this.todoList.addItem(text);}} 
-                    checkItem={(i) => {this.todoList.checkItem(i);}} 
-                    removeItem={ (i) => {this.todoList.removeItem(i);}
-          }/>
+        <TodoApp items={this.props.items} 
+                    addItem={(text) => { this.props.addItem(text);}} 
+                    checkItem={(i) => { this.props.checkItem(i);}} 
+                    removeItem={ (i) => { this.props.removeItem(i);}}
+          />
       </div>
     );
   }
 }
 
-export default App;
+const mapStateToProps = state => {
+  return { items: state.items };
+};
+
+export default connect(mapStateToProps, {
+  addItem: actions.addTodoItem,
+  checkItem: actions.checkTodoItem,
+  removeItem: actions.removeTodoItem
+})(App);

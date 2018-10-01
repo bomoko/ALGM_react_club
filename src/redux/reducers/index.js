@@ -1,4 +1,4 @@
-import * as actions from './actions';
+import * as actions from '../actions/index';
 
 const initialState = {
     items: [],
@@ -35,6 +35,13 @@ const checkTodoItemByIndex = (state, action) => ({
     })
 });
 
+/**
+ * Since this is such a simple app, we'll just stick (for now) with my own root reducer
+ * rather than using combineReducers() 
+ * 
+ * @param {*} state 
+ * @param {*} action 
+ */
 export const todoApp = (state = initialState, action) => {
     switch(action.type) {
         case(actions.ACTION_TODO_ADD):

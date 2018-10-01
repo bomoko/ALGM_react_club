@@ -1,5 +1,6 @@
-import * as reducers from './reducers';
-import * as actions from './actions';
+import * as reducers from './redux/reducers';
+import * as actions from './redux/actions';
+import {createStore} from 'redux';
 
 test('It should return a structured object with an index and empty items array', () => {
     let state = reducers.todoApp(undefined, {action:"noting"});
@@ -36,4 +37,16 @@ test('It should be able to check an item', () => {
     state = reducers.todoApp(state, actions.checkTodoItem(testItem.index));
     checkedItem = state.items.filter((item) => { return item.index == testItem.index;})[0];
     expect(checkedItem.completed).toBe(false);
+});
+
+test('We should be able to wrap this up in a store', () => {
+    const store = createStore(reducers.todoApp);
+    store.dispatch(actions.addTodoItem("testing store"));
+    let state = store.getState();
+    let testItem = state.items[0];
+    expect(testItem.completed).toBe(false);
+    store.dispatch(actions.checkTodoItem(testItem.index)); //interestingly, this call seems to return the action!
+    state = store.getState();
+    testItem = state.items[0];
+    expect(testItem.completed).toBe(true);
 });
