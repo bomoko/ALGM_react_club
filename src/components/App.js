@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { user } from '@solid/query-ldflex';
-import { AuthButton, LoggedInPane, LoggedOutPane, DataField } from '../shared/solid';
+import { AuthButton, LoggedInPane, LoggedOutPane, DataField } from '../solid';
 
 import AddTodo from './AddTodo';
 import TodoListSwitcher from './TodoListSwitcher';
