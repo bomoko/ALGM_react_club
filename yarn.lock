@@ -2,6 +2,692 @@
 # yarn lockfile v1
 
 
+"@babel/runtime@^7.0.0":
+  version "7.1.2"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.1.2.tgz#81c89935f4647706fc54541145e6b4ecfef4b8e3"
+  dependencies:
+    regenerator-runtime "^0.12.0"
+
+"@comunica/actor-abstract-mediatyped@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-abstract-mediatyped/-/actor-abstract-mediatyped-1.2.0.tgz#7f4087601cb7adfdb34050a1531b30bf5790f60c"
+  dependencies:
+    lodash.mapvalues "^4.6.0"
+
+"@comunica/actor-abstract-path@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-abstract-path/-/actor-abstract-path-1.2.0.tgz#887455dbf5341f13f17768be482cb53ababba773"
+  dependencies:
+    "@rdfjs/data-model" "^1.0.0"
+    asynciterator "^2.0.0"
+    rdf-string "^1.2.0"
+    sparqlalgebrajs "^1.1.0"
+
+"@comunica/actor-context-preprocess-rdf-source-identifier@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-context-preprocess-rdf-source-identifier/-/actor-context-preprocess-rdf-source-identifier-1.2.0.tgz#990373597960d6b7f89b33b6674ba39290d37b94"
+  dependencies:
+    asyncreiterable "^1.1.0"
+
+"@comunica/actor-http-memento@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-http-memento/-/actor-http-memento-1.2.0.tgz#acff01264a8df7938787e1966af07de9f358f2e2"
+  dependencies:
+    isomorphic-fetch "^2.2.1"
+    parse-link-header "^1.0.1"
+
+"@comunica/actor-http-native@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-http-native/-/actor-http-native-1.2.0.tgz#c9eae46877c663a9b7a049a406b7318d21a59e1e"
+  dependencies:
+    follow-redirects "^1.5.1"
+    isomorphic-fetch "^2.2.1"
+    parse-link-header "^1.0.1"
+
+"@comunica/actor-init-sparql@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-init-sparql/-/actor-init-sparql-1.3.0.tgz#1506e452e809dacf73414f0775e387b1717a45c5"
+  dependencies:
+    "@comunica/actor-abstract-mediatyped" "^1.2.0"
+    "@comunica/actor-context-preprocess-rdf-source-identifier" "^1.2.0"
+    "@comunica/actor-http-memento" "^1.2.0"
+    "@comunica/actor-http-native" "^1.2.0"
+    "@comunica/actor-query-operation-ask" "^1.2.0"
+    "@comunica/actor-query-operation-bgp-empty" "^1.2.0"
+    "@comunica/actor-query-operation-bgp-left-deep-smallest" "^1.2.0"
+    "@comunica/actor-query-operation-bgp-single" "^1.2.0"
+    "@comunica/actor-query-operation-construct" "^1.2.0"
+    "@comunica/actor-query-operation-describe-subject" "^1.2.0"
+    "@comunica/actor-query-operation-distinct-hash" "^1.2.0"
+    "@comunica/actor-query-operation-filter-direct" "^1.2.0"
+    "@comunica/actor-query-operation-from-quad" "^1.2.0"
+    "@comunica/actor-query-operation-join" "^1.2.0"
+    "@comunica/actor-query-operation-leftjoin-nestedloop" "^1.2.0"
+    "@comunica/actor-query-operation-orderby-direct" "^1.2.0"
+    "@comunica/actor-query-operation-path-alt" "^1.2.1"
+    "@comunica/actor-query-operation-path-inv" "^1.2.1"
+    "@comunica/actor-query-operation-path-link" "^1.2.1"
+    "@comunica/actor-query-operation-path-nps" "^1.2.1"
+    "@comunica/actor-query-operation-path-one-or-more" "^1.2.1"
+    "@comunica/actor-query-operation-path-seq" "^1.2.1"
+    "@comunica/actor-query-operation-path-zero-or-more" "^1.2.1"
+    "@comunica/actor-query-operation-path-zero-or-one" "^1.2.1"
+    "@comunica/actor-query-operation-project" "^1.2.0"
+    "@comunica/actor-query-operation-quadpattern" "^1.2.0"
+    "@comunica/actor-query-operation-service" "^1.2.1"
+    "@comunica/actor-query-operation-slice" "^1.2.0"
+    "@comunica/actor-query-operation-sparql-endpoint" "^1.3.0"
+    "@comunica/actor-query-operation-union" "^1.2.0"
+    "@comunica/actor-query-operation-values" "^1.2.0"
+    "@comunica/actor-rdf-dereference-http-parse" "^1.2.0"
+    "@comunica/actor-rdf-dereference-paged-next" "^1.2.0"
+    "@comunica/actor-rdf-join-nestedloop" "^1.2.0"
+    "@comunica/actor-rdf-metadata-extract-hydra-controls" "^1.2.0"
+    "@comunica/actor-rdf-metadata-extract-hydra-count" "^1.2.0"
+    "@comunica/actor-rdf-metadata-primary-topic" "^1.2.0"
+    "@comunica/actor-rdf-metadata-triple-predicate" "^1.2.0"
+    "@comunica/actor-rdf-parse-jsonld" "^1.2.0"
+    "@comunica/actor-rdf-parse-n3" "^1.2.0"
+    "@comunica/actor-rdf-parse-rdfxml" "^1.3.0"
+    "@comunica/actor-rdf-resolve-quad-pattern-federated" "^1.2.0"
+    "@comunica/actor-rdf-resolve-quad-pattern-file" "^1.2.0"
+    "@comunica/actor-rdf-resolve-quad-pattern-qpf" "^1.2.0"
+    "@comunica/actor-rdf-resolve-quad-pattern-sparql-json" "^1.2.1"
+    "@comunica/actor-rdf-serialize-jsonld" "^1.2.0"
+    "@comunica/actor-rdf-serialize-n3" "^1.2.0"
+    "@comunica/actor-rdf-source-identifier-file-content-type" "^1.2.0"
+    "@comunica/actor-rdf-source-identifier-hypermedia-qpf" "^1.2.0"
+    "@comunica/actor-rdf-source-identifier-sparql" "^1.2.0"
+    "@comunica/actor-sparql-parse-algebra" "^1.2.0"
+    "@comunica/actor-sparql-parse-graphql" "^1.2.1"
+    "@comunica/actor-sparql-serialize-json" "^1.2.0"
+    "@comunica/actor-sparql-serialize-rdf" "^1.2.0"
+    "@comunica/actor-sparql-serialize-simple" "^1.2.0"
+    "@comunica/actor-sparql-serialize-sparql-json" "^1.2.0"
+    "@comunica/actor-sparql-serialize-sparql-xml" "^1.2.0"
+    "@comunica/actor-sparql-serialize-stats" "^1.2.0"
+    "@comunica/actor-sparql-serialize-table" "^1.2.0"
+    "@comunica/actor-sparql-serialize-tree" "^1.3.0"
+    "@comunica/bus-context-preprocess" "^1.2.0"
+    "@comunica/bus-http" "^1.2.0"
+    "@comunica/bus-init" "^1.2.0"
+    "@comunica/bus-query-operation" "^1.2.0"
+    "@comunica/bus-rdf-dereference" "^1.2.0"
+    "@comunica/bus-rdf-dereference-paged" "^1.2.0"
+    "@comunica/bus-rdf-join" "^1.2.0"
+    "@comunica/bus-rdf-metadata" "^1.2.0"
+    "@comunica/bus-rdf-metadata-extract" "^1.2.0"
+    "@comunica/bus-rdf-parse" "^1.2.0"
+    "@comunica/bus-rdf-resolve-quad-pattern" "^1.2.0"
+    "@comunica/bus-rdf-serialize" "^1.2.0"
+    "@comunica/bus-rdf-source-identifier" "^1.2.0"
+    "@comunica/bus-sparql-parse" "^1.2.0"
+    "@comunica/bus-sparql-serialize" "^1.2.0"
+    "@comunica/core" "^1.2.0"
+    "@comunica/logger-pretty" "^1.2.0"
+    "@comunica/logger-void" "^1.2.0"
+    "@comunica/mediator-combine-pipeline" "^1.2.0"
+    "@comunica/mediator-combine-union" "^1.2.0"
+    "@comunica/mediator-number" "^1.2.0"
+    "@comunica/mediator-race" "^1.2.0"
+    "@comunica/runner" "^1.2.0"
+    "@comunica/runner-cli" "^1.2.0"
+    asyncreiterable "^1.1.0"
+    minimist "^1.2.0"
+    negotiate "^1.0.1"
+    rdf-string "^1.1.1"
+    rdf-terms "^1.1.0"
+    streamify-string "^1.0.1"
+
+"@comunica/actor-query-operation-ask@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-ask/-/actor-query-operation-ask-1.2.0.tgz#0785cdc52a4769322048294c42730f056589e1d9"
+
+"@comunica/actor-query-operation-bgp-empty@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-bgp-empty/-/actor-query-operation-bgp-empty-1.2.0.tgz#471452f29c0f956d246083fcedf14f3848257165"
+  dependencies:
+    asynciterator "^2.0.0"
+
+"@comunica/actor-query-operation-bgp-left-deep-smallest@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-bgp-left-deep-smallest/-/actor-query-operation-bgp-left-deep-smallest-1.2.0.tgz#7544e2bc005a9b51754308b28e5872dff5c4689b"
+  dependencies:
+    asynciterator-promiseproxy "^2.0.0"
+    lodash.uniq "^4.5.0"
+    rdf-string "^1.1.1"
+    rdf-terms "^1.1.0"
+
+"@comunica/actor-query-operation-bgp-single@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-bgp-single/-/actor-query-operation-bgp-single-1.2.0.tgz#eb84ce205b353e4aad95fdfdd58d8a7958bbe731"
+
+"@comunica/actor-query-operation-construct@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-construct/-/actor-query-operation-construct-1.2.0.tgz#c4d5f3bf5a3ab5d314b503ec81dabaec04b521b2"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    asynciterator "^2.0.0"
+    rdf-terms "^1.1.0"
+
+"@comunica/actor-query-operation-describe-subject@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-describe-subject/-/actor-query-operation-describe-subject-1.2.0.tgz#c7073c251c86e34af95cfb1b5b4b6d22f98c02f3"
+  dependencies:
+    "@comunica/actor-query-operation-union" "^1.2.0"
+    "@rdfjs/data-model" "^1.1.0"
+    asynciterator-union "^2.1.0"
+
+"@comunica/actor-query-operation-distinct-hash@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-distinct-hash/-/actor-query-operation-distinct-hash-1.2.0.tgz#a78df43e25c865244d9f7a930e056ad22adad87e"
+  dependencies:
+    json-stable-stringify "^1.0.1"
+
+"@comunica/actor-query-operation-filter-direct@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-filter-direct/-/actor-query-operation-filter-direct-1.2.0.tgz#9d3e241a5106d02cf2978c99ce64e5a6faba4b61"
+  dependencies:
+    rdf-string "^1.1.1"
+
+"@comunica/actor-query-operation-from-quad@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-from-quad/-/actor-query-operation-from-quad-1.2.0.tgz#d992a86e65e156f4d44db19a88dbd61cc871b323"
+  dependencies:
+    lodash.find "^4.6.0"
+    sparqlalgebrajs "^1.1.0"
+
+"@comunica/actor-query-operation-join@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-join/-/actor-query-operation-join-1.2.0.tgz#d98ee1ea39088b398f82b048234ea4cbdd4816c2"
+
+"@comunica/actor-query-operation-leftjoin-nestedloop@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-leftjoin-nestedloop/-/actor-query-operation-leftjoin-nestedloop-1.2.0.tgz#59bb9d3242d96ac106d20eee43af74f2308a41b3"
+
+"@comunica/actor-query-operation-orderby-direct@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-orderby-direct/-/actor-query-operation-orderby-direct-1.2.0.tgz#8a3fd486baaf24727b742c5a2aa907d4a7b116dd"
+  dependencies:
+    rdf-string "^1.1.1"
+
+"@comunica/actor-query-operation-path-alt@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-alt/-/actor-query-operation-path-alt-1.2.1.tgz#ea20f8cce1dfc883651acd1252831311f6bc3ca5"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+    asynciterator-union "^2.1.0"
+    lodash.uniq "^4.5.0"
+
+"@comunica/actor-query-operation-path-inv@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-inv/-/actor-query-operation-path-inv-1.2.1.tgz#85e69e851d3d904f48122dc54739fd5fdeb05643"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+
+"@comunica/actor-query-operation-path-link@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-link/-/actor-query-operation-path-link-1.2.1.tgz#30c8288bc47d78018e74d3525b58a2b1aafdd9bc"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+
+"@comunica/actor-query-operation-path-nps@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-nps/-/actor-query-operation-path-nps-1.2.1.tgz#271edf9095e00d2134eeb06d4e780d41517fc397"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+
+"@comunica/actor-query-operation-path-one-or-more@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-one-or-more/-/actor-query-operation-path-one-or-more-1.2.1.tgz#720908db6245b28d8ba6020837994d019f44ef29"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+    asynciterator "^2.0.0"
+    asynciterator-promiseproxy "^2.0.0"
+    rdf-string "^1.2.0"
+
+"@comunica/actor-query-operation-path-seq@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-seq/-/actor-query-operation-path-seq-1.2.1.tgz#a841885dc5a9235362437f8047dc2ef803357ae3"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+    rdf-string "^1.2.0"
+
+"@comunica/actor-query-operation-path-zero-or-more@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-zero-or-more/-/actor-query-operation-path-zero-or-more-1.2.1.tgz#16d28cda4a04d17f12bb699d68eb5217fc83951f"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+    rdf-string "^1.2.0"
+
+"@comunica/actor-query-operation-path-zero-or-one@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-path-zero-or-one/-/actor-query-operation-path-zero-or-one-1.2.1.tgz#68eab844327ff1eeb6702bc33a12bb8b40e033c6"
+  dependencies:
+    "@comunica/actor-abstract-path" "^1.2.0"
+    asynciterator "^2.0.0"
+    rdf-string "^1.2.0"
+
+"@comunica/actor-query-operation-project@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-project/-/actor-query-operation-project-1.2.0.tgz#02102d597cdc3655e78bde6c64bcdca33c7e5f92"
+  dependencies:
+    rdf-string "^1.1.1"
+
+"@comunica/actor-query-operation-quadpattern@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-quadpattern/-/actor-query-operation-quadpattern-1.2.0.tgz#c6909748dc7ebb998ebcdc0820d16ee9cbec786e"
+  dependencies:
+    asynciterator-promiseproxy "^2.0.0"
+    rdf-string "^1.1.1"
+    rdf-terms "^1.1.0"
+
+"@comunica/actor-query-operation-service@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-service/-/actor-query-operation-service-1.2.1.tgz#a1d9c2f85402ba63f4c5ed42b993b173bb3ea917"
+  dependencies:
+    asynciterator "^2.0.0"
+
+"@comunica/actor-query-operation-slice@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-slice/-/actor-query-operation-slice-1.2.0.tgz#858e8880c365d93d78eba52e4eb879aec3be5338"
+
+"@comunica/actor-query-operation-sparql-endpoint@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-sparql-endpoint/-/actor-query-operation-sparql-endpoint-1.3.0.tgz#1af725e5f66ae0697c5c37cae1666c99cae1d230"
+  dependencies:
+    arrayify-stream "^1.0.0"
+    asynciterator "^2.0.0"
+    fetch-sparql-endpoint "^1.3.3"
+    rdf-string "^1.1.1"
+    rdf-terms "^1.1.0"
+    sparqlalgebrajs "^1.1.0"
+
+"@comunica/actor-query-operation-union@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-union/-/actor-query-operation-union-1.2.0.tgz#31b8f13033126ce1c3606e27b01942a9c5b9e325"
+  dependencies:
+    asynciterator-union "^2.1.0"
+    lodash.union "^4.6.0"
+
+"@comunica/actor-query-operation-values@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-query-operation-values/-/actor-query-operation-values-1.2.0.tgz#6d49dc9ca89ee25bbf74dc2495cd7196496d904d"
+  dependencies:
+    asynciterator "^2.0.0"
+    rdf-string "^1.1.1"
+
+"@comunica/actor-rdf-dereference-http-parse@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-dereference-http-parse/-/actor-rdf-dereference-http-parse-1.2.0.tgz#8b6cc9dc796269f63c5dfa2f2dca95625d5ac68a"
+  dependencies:
+    node-web-streams "^0.2.2"
+
+"@comunica/actor-rdf-dereference-paged-next@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-dereference-paged-next/-/actor-rdf-dereference-paged-next-1.2.0.tgz#d066774ee61222d60bd61ab28c876e218849a539"
+  dependencies:
+    asynciterator "^2.0.0"
+    lru-cache "^4.1.1"
+
+"@comunica/actor-rdf-join-nestedloop@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-join-nestedloop/-/actor-rdf-join-nestedloop-1.2.0.tgz#06aa467177b8a85d0885d290ce784952671a9a5d"
+  dependencies:
+    asyncjoin "^0.3.0"
+
+"@comunica/actor-rdf-metadata-extract-hydra-controls@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-metadata-extract-hydra-controls/-/actor-rdf-metadata-extract-hydra-controls-1.2.0.tgz#03ab738a78b0ca943e921f0ef962b1ed68df6a1e"
+  dependencies:
+    lodash.assign "^4.2.0"
+    lodash.flatten "^4.4.0"
+    lodash.mapvalues "^4.6.0"
+    lodash.values "^4.3.0"
+    uritemplate "0.3.4"
+
+"@comunica/actor-rdf-metadata-extract-hydra-count@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-metadata-extract-hydra-count/-/actor-rdf-metadata-extract-hydra-count-1.2.0.tgz#4182aebbc2b97547e1c0f11a584c86f4a9f6d431"
+
+"@comunica/actor-rdf-metadata-primary-topic@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-metadata-primary-topic/-/actor-rdf-metadata-primary-topic-1.2.0.tgz#db0911123d89243da3e82644e396833ba9024507"
+
+"@comunica/actor-rdf-metadata-triple-predicate@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-metadata-triple-predicate/-/actor-rdf-metadata-triple-predicate-1.2.0.tgz#f7b47b362050a18231108d34d72c874664e89acb"
+
+"@comunica/actor-rdf-parse-jsonld@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-parse-jsonld/-/actor-rdf-parse-jsonld-1.2.0.tgz#f6a182a2e96a95d6e6312d2b9630fc83fa960342"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    jsonld "^1.0.2"
+    rdf-terms "^1.2.0"
+    stream-to-string "^1.1.0"
+
+"@comunica/actor-rdf-parse-n3@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-parse-n3/-/actor-rdf-parse-n3-1.2.0.tgz#b0cfc11b7bf5bfde5b6252d9b6c028aaf914b3a1"
+  dependencies:
+    n3 "1.0.0-beta.2"
+
+"@comunica/actor-rdf-parse-rdfxml@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-parse-rdfxml/-/actor-rdf-parse-rdfxml-1.3.0.tgz#5e38df52dc6947d74f8857714b1dd7e0b3c53929"
+  dependencies:
+    rdfxml-streaming-parser "^1.0.0"
+
+"@comunica/actor-rdf-resolve-quad-pattern-federated@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-resolve-quad-pattern-federated/-/actor-rdf-resolve-quad-pattern-federated-1.2.0.tgz#cedcee0db2b41ee9119671da1db980a6ea3d2bb0"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    asynciterator "^2.0.0"
+    asynciterator-promiseproxy "^2.0.0"
+    asynciterator-union "^2.1.0"
+    lodash.omit "^4.5.0"
+
+"@comunica/actor-rdf-resolve-quad-pattern-file@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-resolve-quad-pattern-file/-/actor-rdf-resolve-quad-pattern-file-1.2.0.tgz#3df691351b4171a07b84f27e6179760badd4dfa7"
+  dependencies:
+    asynciterator "^2.0.0"
+    n3 "1.0.0-beta.2"
+    rdf-string "^1.1.1"
+
+"@comunica/actor-rdf-resolve-quad-pattern-qpf@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-resolve-quad-pattern-qpf/-/actor-rdf-resolve-quad-pattern-qpf-1.2.0.tgz#2ed535f90afe8c74551f3600ec35bd9df035d12e"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    asynciterator-promiseproxy "^2.0.0"
+    rdf-string "^1.2.0"
+    rdf-terms "^1.2.0"
+
+"@comunica/actor-rdf-resolve-quad-pattern-sparql-json@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-resolve-quad-pattern-sparql-json/-/actor-rdf-resolve-quad-pattern-sparql-json-1.2.1.tgz#2005c967b61b8041c1b9fe4f405be4194f0eac0d"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    asynciterator "^2.0.0"
+    asynciterator-promiseproxy "^2.0.0"
+    node-web-streams "^0.2.2"
+    rdf-terms "^1.1.0"
+    sparqlalgebrajs "^1.1.0"
+    sparqljson-parse "^1.3.1"
+
+"@comunica/actor-rdf-serialize-jsonld@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-serialize-jsonld/-/actor-rdf-serialize-jsonld-1.2.0.tgz#d464129b1af80fcf7470ac24747a8c5d244fc68f"
+  dependencies:
+    arrayify-stream "^1.0.0"
+    jsonld "^1.0.2"
+    streamify-array "^1.0.0"
+
+"@comunica/actor-rdf-serialize-n3@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-serialize-n3/-/actor-rdf-serialize-n3-1.2.0.tgz#016e74af69ebd9c2e75ab95008fcf06be46d2afc"
+  dependencies:
+    n3 "1.0.0-beta.2"
+    rdf-string "^1.1.1"
+
+"@comunica/actor-rdf-source-identifier-file-content-type@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-source-identifier-file-content-type/-/actor-rdf-source-identifier-file-content-type-1.2.0.tgz#a963895903ee969205dbf0aef56c07c5626666ac"
+
+"@comunica/actor-rdf-source-identifier-hypermedia-qpf@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-source-identifier-hypermedia-qpf/-/actor-rdf-source-identifier-hypermedia-qpf-1.2.0.tgz#501365a1683e456938122eeb475acad5594ffec2"
+  dependencies:
+    stream-to-string "^1.1.0"
+
+"@comunica/actor-rdf-source-identifier-sparql@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-rdf-source-identifier-sparql/-/actor-rdf-source-identifier-sparql-1.2.0.tgz#a405a68eed6aca7bc071f201361caebdf34d1704"
+
+"@comunica/actor-sparql-parse-algebra@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-parse-algebra/-/actor-sparql-parse-algebra-1.2.0.tgz#229e54d5a29965e2fa223820779a0d941183471a"
+  dependencies:
+    sparqlalgebrajs "^1.1.0"
+
+"@comunica/actor-sparql-parse-graphql@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-parse-graphql/-/actor-sparql-parse-graphql-1.2.1.tgz#fd88c040cdd81c0c8d64675692d9b2ddfc727ed6"
+  dependencies:
+    graphql-to-sparql "^1.3.2"
+
+"@comunica/actor-sparql-serialize-json@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-json/-/actor-sparql-serialize-json-1.2.0.tgz#cd951443f88d14ff01351675caf3880b2c4e6b38"
+  dependencies:
+    rdf-string "^1.1.1"
+
+"@comunica/actor-sparql-serialize-rdf@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-rdf/-/actor-sparql-serialize-rdf-1.2.0.tgz#1a6b85b77a2a69248d679d9a266243781f49fb37"
+
+"@comunica/actor-sparql-serialize-simple@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-simple/-/actor-sparql-serialize-simple-1.2.0.tgz#463b16a141ebe54656de014778d9f7e45b7a0945"
+
+"@comunica/actor-sparql-serialize-sparql-json@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-sparql-json/-/actor-sparql-serialize-sparql-json-1.2.0.tgz#db488c0281d04b2d9fbb98fe2973c6c83d709cf2"
+
+"@comunica/actor-sparql-serialize-sparql-xml@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-sparql-xml/-/actor-sparql-serialize-sparql-xml-1.2.0.tgz#98b8dcaeb529973e23f399eb4ed8e7e174914fe8"
+  dependencies:
+    xml "^1.0.1"
+
+"@comunica/actor-sparql-serialize-stats@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-stats/-/actor-sparql-serialize-stats-1.2.0.tgz#f97fa65a3677cedf02fd6d539301554ba5dcadd0"
+
+"@comunica/actor-sparql-serialize-table@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-table/-/actor-sparql-serialize-table-1.2.0.tgz#e807f9f2afae835f2230d0012069627c73aca8f4"
+  dependencies:
+    rdf-terms "^1.1.0"
+
+"@comunica/actor-sparql-serialize-tree@^1.3.0":
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/@comunica/actor-sparql-serialize-tree/-/actor-sparql-serialize-tree-1.3.0.tgz#be58ec16bea81c4ae52556edb51f1b50046caf74"
+  dependencies:
+    sparqljson-to-tree "^1.2.3"
+
+"@comunica/bus-context-preprocess@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-context-preprocess/-/bus-context-preprocess-1.2.0.tgz#dae65a08e138dab28dc2e23d92981bf13d9d7588"
+
+"@comunica/bus-http@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-http/-/bus-http-1.2.0.tgz#45143090d73430c585454e5086658878e0921783"
+
+"@comunica/bus-init@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-init/-/bus-init-1.2.0.tgz#fe56067241ad34138298d2493e25576ba578ca7d"
+
+"@comunica/bus-query-operation@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-query-operation/-/bus-query-operation-1.2.0.tgz#1aee906e44efab5612101e7b4eeadcdd77bd2cd9"
+  dependencies:
+    asynciterator "^2.0.0"
+    immutable "^3.8.2"
+
+"@comunica/bus-rdf-dereference-paged@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-dereference-paged/-/bus-rdf-dereference-paged-1.2.0.tgz#0ae3eab977fd4b59b8ae2cb1b4c81080fb0e9e05"
+
+"@comunica/bus-rdf-dereference@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-dereference/-/bus-rdf-dereference-1.2.0.tgz#6fee824689bdd77a67a95d688cf19f5ea1c97bee"
+
+"@comunica/bus-rdf-join@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-join/-/bus-rdf-join-1.2.0.tgz#607ab457433de9751b4e81466285235695e7cf26"
+  dependencies:
+    lodash.intersection "^4.4.0"
+    lodash.union "^4.6.0"
+
+"@comunica/bus-rdf-metadata-extract@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-metadata-extract/-/bus-rdf-metadata-extract-1.2.0.tgz#2cdb5a10739911c611f480efcb3d6c65726cddae"
+
+"@comunica/bus-rdf-metadata@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-metadata/-/bus-rdf-metadata-1.2.0.tgz#51328ae0013a3819425fc0874ed1f295c1bdf992"
+
+"@comunica/bus-rdf-parse@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-parse/-/bus-rdf-parse-1.2.0.tgz#4a9991fb038f8b6d953c1be03d01d2674b3ce671"
+  dependencies:
+    "@comunica/actor-abstract-mediatyped" "^1.2.0"
+
+"@comunica/bus-rdf-resolve-quad-pattern@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-resolve-quad-pattern/-/bus-rdf-resolve-quad-pattern-1.2.0.tgz#d935ca277ecf603c1b92eef46461d90b1cd42a8f"
+  dependencies:
+    asynciterator "^2.0.0"
+    asyncreiterable "^1.1.0"
+
+"@comunica/bus-rdf-serialize@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-serialize/-/bus-rdf-serialize-1.2.0.tgz#de6d7b5703b092798bbc7b7d40502784a5cf7236"
+  dependencies:
+    "@comunica/actor-abstract-mediatyped" "^1.2.0"
+
+"@comunica/bus-rdf-source-identifier@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-rdf-source-identifier/-/bus-rdf-source-identifier-1.2.0.tgz#1bc27a580b5acdab5e57f7571145d9251a0a1973"
+
+"@comunica/bus-sparql-parse@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-sparql-parse/-/bus-sparql-parse-1.2.0.tgz#a66ed18fb7a0b670e0cf558cd300901faa815f70"
+
+"@comunica/bus-sparql-serialize@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/bus-sparql-serialize/-/bus-sparql-serialize-1.2.0.tgz#8481ec175b24359c99e4ea76e114166d75db5c88"
+  dependencies:
+    "@comunica/actor-abstract-mediatyped" "^1.2.0"
+
+"@comunica/core@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/core/-/core-1.2.0.tgz#9b9501a52d0eea456b62b9f4bccbaa59c4fba297"
+  dependencies:
+    immutable "^3.8.2"
+    lodash.assign "^4.2.0"
+
+"@comunica/logger-pretty@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/logger-pretty/-/logger-pretty-1.2.0.tgz#4b034ebdcc52e1ba2e80c610d17ec8fab5d0ad0c"
+
+"@comunica/logger-void@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/logger-void/-/logger-void-1.2.0.tgz#f06f6109b0e7c57dcb1090c644c9a8e71d1f228d"
+
+"@comunica/mediator-combine-pipeline@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/mediator-combine-pipeline/-/mediator-combine-pipeline-1.2.0.tgz#d6feaa451bdbac8ac744fd092efa9f83ab69dea3"
+  dependencies:
+    lodash.map "^4.6.0"
+
+"@comunica/mediator-combine-union@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/mediator-combine-union/-/mediator-combine-union-1.2.0.tgz#2662f9d167eec7fdf0de5cc615389b2e0ddba9d6"
+  dependencies:
+    lodash.defaults "^4.2.0"
+    lodash.map "^4.6.0"
+
+"@comunica/mediator-number@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/mediator-number/-/mediator-number-1.2.0.tgz#9459afae28dea660dfc65bdd800b0bc740b54ab7"
+  dependencies:
+    lodash.map "^4.6.0"
+
+"@comunica/mediator-race@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/mediator-race/-/mediator-race-1.2.0.tgz#e0ac362ae29fdb9379fc637eb86e230e4bb605e3"
+
+"@comunica/runner-cli@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/runner-cli/-/runner-cli-1.2.0.tgz#736232615a018205efc48f0b9c5c92fbca41848f"
+  dependencies:
+    "@comunica/runner" "^1.2.0"
+
+"@comunica/runner@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@comunica/runner/-/runner-1.2.0.tgz#4c3fc0890ba77f3ca4f273281acfa9b9bb398e2e"
+  dependencies:
+    componentsjs "^3.1.0"
+    lodash.assign "^4.2.0"
+    lodash.defaults "^4.2.0"
+
+"@rdfjs/data-model@^1.0.0", "@rdfjs/data-model@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@rdfjs/data-model/-/data-model-1.1.0.tgz#15d9c5b7b8166893696565aefb65bad95da3fd99"
+
+"@solid/jose@0.1.8":
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/@solid/jose/-/jose-0.1.8.tgz#dcff7fdfc145890fa2c42a75d3585e0fd98dd8bf"
+  dependencies:
+    "@trust/json-document" "^0.1.4"
+    "@trust/webcrypto" "^0.9.2"
+    base64url "^3.0.0"
+    text-encoding "^0.6.4"
+
+"@solid/oidc-rp@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@solid/oidc-rp/-/oidc-rp-0.8.0.tgz#1cfd128fef1fa4fd03bafeff8cfdb6568d298857"
+  dependencies:
+    "@solid/jose" "0.1.8"
+    "@trust/json-document" "^0.1.4"
+    "@trust/webcrypto" "0.9.2"
+    base64url "^3.0.0"
+    node-fetch "^2.1.2"
+    standard-http-error "^2.0.1"
+    text-encoding "^0.6.4"
+    whatwg-url "^6.4.1"
+
+"@solid/query-ldflex@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@solid/query-ldflex/-/query-ldflex-0.1.1.tgz#c09504137369e8025b6874c7a7f60623ee0b0452"
+  dependencies:
+    ldflex "^0.1.0"
+    ldflex-comunica "^0.1.0"
+
+"@trust/json-document@^0.1.4":
+  version "0.1.4"
+  resolved "https://registry.yarnpkg.com/@trust/json-document/-/json-document-0.1.4.tgz#b2023b1e145ba7685bd1f36ec7b69128940073e9"
+
+"@trust/keyto@^0.3.4":
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/@trust/keyto/-/keyto-0.3.4.tgz#4b0a6de6d64af242944b238ce918b443a734a245"
+  dependencies:
+    asn1.js "^4.9.1"
+    base64url "^3.0.0"
+    elliptic "^6.4.0"
+
+"@trust/webcrypto@0.9.2", "@trust/webcrypto@^0.9.2":
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/@trust/webcrypto/-/webcrypto-0.9.2.tgz#c699d4c026a4446b04faa54d5389a81888ba713c"
+  dependencies:
+    "@trust/keyto" "^0.3.4"
+    base64url "^3.0.0"
+    elliptic "^6.4.0"
+    node-rsa "^0.4.0"
+    text-encoding "^0.6.1"
+
+JSONStream@^1.3.3:
+  version "1.3.4"
+  resolved "https://registry.yarnpkg.com/JSONStream/-/JSONStream-1.3.4.tgz#615bb2adb0cd34c8f4c447b5f6512fa1d8f16a2e"
+  dependencies:
+    jsonparse "^1.2.0"
+    through ">=2.2.7 <3"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -240,6 +926,10 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
+arrayify-stream@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/arrayify-stream/-/arrayify-stream-1.0.0.tgz#9e8e113d43325c3a44e965c59b5b89d962b9a37f"
+
 arrify@^1.0.0, arrify@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/arrify/-/arrify-1.0.1.tgz#898508da2226f380df904728456849c1501a4b0d"
@@ -248,13 +938,17 @@ asap@~2.0.3:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/asap/-/asap-2.0.6.tgz#e50347611d7e690943208bbdafebcbc2fb866d46"
 
-asn1.js@^4.0.0:
+asn1.js@^4.0.0, asn1.js@^4.9.1:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
   dependencies:
     bn.js "^4.0.0"
     inherits "^2.0.1"
     minimalistic-assert "^1.0.0"
+
+asn1@0.2.3:
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/asn1/-/asn1-0.2.3.tgz#dac8787713c9966849fc8180777ebe9c1ddf3b86"
 
 asn1@~0.2.3:
   version "0.2.4"
@@ -294,13 +988,47 @@ async@^2.1.2, async@^2.1.4, async@^2.4.1, async@^2.5.0:
   dependencies:
     lodash "^4.17.10"
 
+asynciterator-promiseproxy@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/asynciterator-promiseproxy/-/asynciterator-promiseproxy-2.0.0.tgz#31f254cad97731276fd707d3f20c935711007021"
+  dependencies:
+    asynciterator "^2.0.0"
+
+asynciterator-union@^2.1.0:
+  version "2.1.1"
+  resolved "https://registry.yarnpkg.com/asynciterator-union/-/asynciterator-union-2.1.1.tgz#0eb7f54af98259dfeb521695c17abfbb8190e9f2"
+  dependencies:
+    asynciterator "^2.0.0"
+
+asynciterator@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/asynciterator/-/asynciterator-2.0.0.tgz#f1d5ef187422aa9b3d6bd26bfcfa6f861435f635"
+  dependencies:
+    immediate "^3.2.3"
+
+asyncjoin@^0.3.0:
+  version "0.3.0"
+  resolved "https://registry.yarnpkg.com/asyncjoin/-/asyncjoin-0.3.0.tgz#464e822e94629d571323ae179ea79a4fcd169111"
+  dependencies:
+    asynciterator "^2.0.0"
+
 asynckit@^0.4.0:
   version "0.4.0"
   resolved "https://registry.yarnpkg.com/asynckit/-/asynckit-0.4.0.tgz#c79ed97f7f34cb8f2ba1bc9790bcc366474b4b79"
 
+asyncreiterable@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/asyncreiterable/-/asyncreiterable-1.1.0.tgz#438175b924139d52503cfbf050e5d61fe19c79c4"
+  dependencies:
+    asynciterator "^2.0.0"
+
 atob@^2.1.1:
   version "2.1.2"
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
+
+auth-header@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/auth-header/-/auth-header-1.0.0.tgz#ea24fdc5588e1eb8b750df8655a396aa48fc9076"
 
 autoprefixer@7.1.6:
   version "7.1.6"
@@ -370,7 +1098,7 @@ babel-core@6.26.0:
     slash "^1.0.0"
     source-map "^0.5.6"
 
-babel-core@^6.0.0, babel-core@^6.26.0:
+babel-core@^6.0.0, babel-core@^6.26.0, babel-core@^6.26.3:
   version "6.26.3"
   resolved "https://registry.yarnpkg.com/babel-core/-/babel-core-6.26.3.tgz#b2e2f09e342d0f0c88e2f02e067794125e75c207"
   dependencies:
@@ -416,6 +1144,14 @@ babel-generator@^6.18.0, babel-generator@^6.26.0:
     source-map "^0.5.7"
     trim-right "^1.0.1"
 
+babel-helper-bindify-decorators@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-helper-bindify-decorators/-/babel-helper-bindify-decorators-6.24.1.tgz#14c19e5f142d7b47f19a52431e52b1ccbc40a330"
+  dependencies:
+    babel-runtime "^6.22.0"
+    babel-traverse "^6.24.1"
+    babel-types "^6.24.1"
+
 babel-helper-builder-binary-assignment-operator-visitor@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-helper-builder-binary-assignment-operator-visitor/-/babel-helper-builder-binary-assignment-operator-visitor-6.24.1.tgz#cce4517ada356f4220bcae8a02c2b346f9a56664"
@@ -454,6 +1190,15 @@ babel-helper-explode-assignable-expression@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-helper-explode-assignable-expression/-/babel-helper-explode-assignable-expression-6.24.1.tgz#f25b82cf7dc10433c55f70592d5746400ac22caa"
   dependencies:
+    babel-runtime "^6.22.0"
+    babel-traverse "^6.24.1"
+    babel-types "^6.24.1"
+
+babel-helper-explode-class@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-helper-explode-class/-/babel-helper-explode-class-6.24.1.tgz#7dc2a3910dee007056e1e31d640ced3d54eaa9eb"
+  dependencies:
+    babel-helper-bindify-decorators "^6.24.1"
     babel-runtime "^6.22.0"
     babel-traverse "^6.24.1"
     babel-types "^6.24.1"
@@ -541,6 +1286,15 @@ babel-loader@7.1.2:
     loader-utils "^1.0.2"
     mkdirp "^0.5.1"
 
+babel-loader@^8.0.4:
+  version "8.0.4"
+  resolved "https://registry.yarnpkg.com/babel-loader/-/babel-loader-8.0.4.tgz#7bbf20cbe4560629e2e41534147692d3fecbdce6"
+  dependencies:
+    find-cache-dir "^1.0.0"
+    loader-utils "^1.0.2"
+    mkdirp "^0.5.1"
+    util.promisify "^1.0.0"
+
 babel-messages@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-messages/-/babel-messages-6.23.0.tgz#f3cdf4703858035b2a2951c6ec5edf6c62f2630e"
@@ -578,9 +1332,25 @@ babel-plugin-syntax-async-functions@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-async-functions/-/babel-plugin-syntax-async-functions-6.13.0.tgz#cad9cad1191b5ad634bf30ae0872391e0647be95"
 
+babel-plugin-syntax-async-generators@^6.5.0:
+  version "6.13.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-async-generators/-/babel-plugin-syntax-async-generators-6.13.0.tgz#6bc963ebb16eccbae6b92b596eb7f35c342a8b9a"
+
+babel-plugin-syntax-class-constructor-call@^6.18.0:
+  version "6.18.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-class-constructor-call/-/babel-plugin-syntax-class-constructor-call-6.18.0.tgz#9cb9d39fe43c8600bec8146456ddcbd4e1a76416"
+
 babel-plugin-syntax-class-properties@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-class-properties/-/babel-plugin-syntax-class-properties-6.13.0.tgz#d7eb23b79a317f8543962c505b827c7d6cac27de"
+
+babel-plugin-syntax-decorators@^6.13.0:
+  version "6.13.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-decorators/-/babel-plugin-syntax-decorators-6.13.0.tgz#312563b4dbde3cc806cee3e416cceeaddd11ac0b"
+
+babel-plugin-syntax-do-expressions@^6.8.0:
+  version "6.13.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-do-expressions/-/babel-plugin-syntax-do-expressions-6.13.0.tgz#5747756139aa26d390d09410b03744ba07e4796d"
 
 babel-plugin-syntax-dynamic-import@6.18.0, babel-plugin-syntax-dynamic-import@^6.18.0:
   version "6.18.0"
@@ -590,9 +1360,17 @@ babel-plugin-syntax-exponentiation-operator@^6.8.0:
   version "6.13.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-exponentiation-operator/-/babel-plugin-syntax-exponentiation-operator-6.13.0.tgz#9ee7e8337290da95288201a6a57f4170317830de"
 
+babel-plugin-syntax-export-extensions@^6.8.0:
+  version "6.13.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-export-extensions/-/babel-plugin-syntax-export-extensions-6.13.0.tgz#70a1484f0f9089a4e84ad44bac353c95b9b12721"
+
 babel-plugin-syntax-flow@^6.18.0:
   version "6.18.0"
   resolved "http://registry.npmjs.org/babel-plugin-syntax-flow/-/babel-plugin-syntax-flow-6.18.0.tgz#4c3ab20a2af26aa20cd25995c398c4eb70310c8d"
+
+babel-plugin-syntax-function-bind@^6.8.0:
+  version "6.13.0"
+  resolved "http://registry.npmjs.org/babel-plugin-syntax-function-bind/-/babel-plugin-syntax-function-bind-6.13.0.tgz#48c495f177bdf31a981e732f55adc0bdd2601f46"
 
 babel-plugin-syntax-jsx@^6.3.13, babel-plugin-syntax-jsx@^6.8.0:
   version "6.18.0"
@@ -606,7 +1384,15 @@ babel-plugin-syntax-trailing-function-commas@^6.22.0:
   version "6.22.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-6.22.0.tgz#ba0360937f8d06e40180a43fe0d5616fff532cf3"
 
-babel-plugin-transform-async-to-generator@^6.22.0:
+babel-plugin-transform-async-generator-functions@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-generator-functions/-/babel-plugin-transform-async-generator-functions-6.24.1.tgz#f058900145fd3e9907a6ddf28da59f215258a5db"
+  dependencies:
+    babel-helper-remap-async-to-generator "^6.24.1"
+    babel-plugin-syntax-async-generators "^6.5.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-async-to-generator@^6.22.0, babel-plugin-transform-async-to-generator@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-async-to-generator/-/babel-plugin-transform-async-to-generator-6.24.1.tgz#6536e378aff6cb1d5517ac0e40eb3e9fc8d08761"
   dependencies:
@@ -614,7 +1400,15 @@ babel-plugin-transform-async-to-generator@^6.22.0:
     babel-plugin-syntax-async-functions "^6.8.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-class-properties@6.24.1:
+babel-plugin-transform-class-constructor-call@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-class-constructor-call/-/babel-plugin-transform-class-constructor-call-6.24.1.tgz#80dc285505ac067dcb8d6c65e2f6f11ab7765ef9"
+  dependencies:
+    babel-plugin-syntax-class-constructor-call "^6.18.0"
+    babel-runtime "^6.22.0"
+    babel-template "^6.24.1"
+
+babel-plugin-transform-class-properties@6.24.1, babel-plugin-transform-class-properties@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-class-properties/-/babel-plugin-transform-class-properties-6.24.1.tgz#6a79763ea61d33d36f37b611aa9def81a81b46ac"
   dependencies:
@@ -622,6 +1416,23 @@ babel-plugin-transform-class-properties@6.24.1:
     babel-plugin-syntax-class-properties "^6.8.0"
     babel-runtime "^6.22.0"
     babel-template "^6.24.1"
+
+babel-plugin-transform-decorators@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-decorators/-/babel-plugin-transform-decorators-6.24.1.tgz#788013d8f8c6b5222bdf7b344390dfd77569e24d"
+  dependencies:
+    babel-helper-explode-class "^6.24.1"
+    babel-plugin-syntax-decorators "^6.13.0"
+    babel-runtime "^6.22.0"
+    babel-template "^6.24.1"
+    babel-types "^6.24.1"
+
+babel-plugin-transform-do-expressions@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-do-expressions/-/babel-plugin-transform-do-expressions-6.22.0.tgz#28ccaf92812d949c2cd1281f690c8fdc468ae9bb"
+  dependencies:
+    babel-plugin-syntax-do-expressions "^6.8.0"
+    babel-runtime "^6.22.0"
 
 babel-plugin-transform-es2015-arrow-functions@^6.22.0:
   version "6.22.0"
@@ -791,12 +1602,19 @@ babel-plugin-transform-es2015-unicode-regex@^6.22.0:
     babel-runtime "^6.22.0"
     regexpu-core "^2.0.0"
 
-babel-plugin-transform-exponentiation-operator@^6.22.0:
+babel-plugin-transform-exponentiation-operator@^6.22.0, babel-plugin-transform-exponentiation-operator@^6.24.1:
   version "6.24.1"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-exponentiation-operator/-/babel-plugin-transform-exponentiation-operator-6.24.1.tgz#2ab0c9c7f3098fa48907772bb813fe41e8de3a0e"
   dependencies:
     babel-helper-builder-binary-assignment-operator-visitor "^6.24.1"
     babel-plugin-syntax-exponentiation-operator "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-export-extensions@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-export-extensions/-/babel-plugin-transform-export-extensions-6.22.0.tgz#53738b47e75e8218589eea946cbbd39109bbe653"
+  dependencies:
+    babel-plugin-syntax-export-extensions "^6.8.0"
     babel-runtime "^6.22.0"
 
 babel-plugin-transform-flow-strip-types@^6.22.0:
@@ -806,7 +1624,14 @@ babel-plugin-transform-flow-strip-types@^6.22.0:
     babel-plugin-syntax-flow "^6.18.0"
     babel-runtime "^6.22.0"
 
-babel-plugin-transform-object-rest-spread@6.26.0:
+babel-plugin-transform-function-bind@^6.22.0:
+  version "6.22.0"
+  resolved "https://registry.yarnpkg.com/babel-plugin-transform-function-bind/-/babel-plugin-transform-function-bind-6.22.0.tgz#c6fb8e96ac296a310b8cf8ea401462407ddf6a97"
+  dependencies:
+    babel-plugin-syntax-function-bind "^6.8.0"
+    babel-runtime "^6.22.0"
+
+babel-plugin-transform-object-rest-spread@6.26.0, babel-plugin-transform-object-rest-spread@^6.22.0:
   version "6.26.0"
   resolved "https://registry.yarnpkg.com/babel-plugin-transform-object-rest-spread/-/babel-plugin-transform-object-rest-spread-6.26.0.tgz#0f36692d50fef6b7e2d4b3ac1478137a963b7b06"
   dependencies:
@@ -901,6 +1726,41 @@ babel-preset-env@1.6.1:
     invariant "^2.2.2"
     semver "^5.3.0"
 
+babel-preset-env@^1.7.0:
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/babel-preset-env/-/babel-preset-env-1.7.0.tgz#dea79fa4ebeb883cd35dab07e260c1c9c04df77a"
+  dependencies:
+    babel-plugin-check-es2015-constants "^6.22.0"
+    babel-plugin-syntax-trailing-function-commas "^6.22.0"
+    babel-plugin-transform-async-to-generator "^6.22.0"
+    babel-plugin-transform-es2015-arrow-functions "^6.22.0"
+    babel-plugin-transform-es2015-block-scoped-functions "^6.22.0"
+    babel-plugin-transform-es2015-block-scoping "^6.23.0"
+    babel-plugin-transform-es2015-classes "^6.23.0"
+    babel-plugin-transform-es2015-computed-properties "^6.22.0"
+    babel-plugin-transform-es2015-destructuring "^6.23.0"
+    babel-plugin-transform-es2015-duplicate-keys "^6.22.0"
+    babel-plugin-transform-es2015-for-of "^6.23.0"
+    babel-plugin-transform-es2015-function-name "^6.22.0"
+    babel-plugin-transform-es2015-literals "^6.22.0"
+    babel-plugin-transform-es2015-modules-amd "^6.22.0"
+    babel-plugin-transform-es2015-modules-commonjs "^6.23.0"
+    babel-plugin-transform-es2015-modules-systemjs "^6.23.0"
+    babel-plugin-transform-es2015-modules-umd "^6.23.0"
+    babel-plugin-transform-es2015-object-super "^6.22.0"
+    babel-plugin-transform-es2015-parameters "^6.23.0"
+    babel-plugin-transform-es2015-shorthand-properties "^6.22.0"
+    babel-plugin-transform-es2015-spread "^6.22.0"
+    babel-plugin-transform-es2015-sticky-regex "^6.22.0"
+    babel-plugin-transform-es2015-template-literals "^6.22.0"
+    babel-plugin-transform-es2015-typeof-symbol "^6.23.0"
+    babel-plugin-transform-es2015-unicode-regex "^6.22.0"
+    babel-plugin-transform-exponentiation-operator "^6.22.0"
+    babel-plugin-transform-regenerator "^6.22.0"
+    browserslist "^3.2.6"
+    invariant "^2.2.2"
+    semver "^5.3.0"
+
 babel-preset-flow@^6.23.0:
   version "6.23.0"
   resolved "https://registry.yarnpkg.com/babel-preset-flow/-/babel-preset-flow-6.23.0.tgz#e71218887085ae9a24b5be4169affb599816c49d"
@@ -941,6 +1801,41 @@ babel-preset-react@6.24.1:
     babel-plugin-transform-react-jsx-self "^6.22.0"
     babel-plugin-transform-react-jsx-source "^6.22.0"
     babel-preset-flow "^6.23.0"
+
+babel-preset-stage-0@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-stage-0/-/babel-preset-stage-0-6.24.1.tgz#5642d15042f91384d7e5af8bc88b1db95b039e6a"
+  dependencies:
+    babel-plugin-transform-do-expressions "^6.22.0"
+    babel-plugin-transform-function-bind "^6.22.0"
+    babel-preset-stage-1 "^6.24.1"
+
+babel-preset-stage-1@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-stage-1/-/babel-preset-stage-1-6.24.1.tgz#7692cd7dcd6849907e6ae4a0a85589cfb9e2bfb0"
+  dependencies:
+    babel-plugin-transform-class-constructor-call "^6.24.1"
+    babel-plugin-transform-export-extensions "^6.22.0"
+    babel-preset-stage-2 "^6.24.1"
+
+babel-preset-stage-2@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-stage-2/-/babel-preset-stage-2-6.24.1.tgz#d9e2960fb3d71187f0e64eec62bc07767219bdc1"
+  dependencies:
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    babel-plugin-transform-class-properties "^6.24.1"
+    babel-plugin-transform-decorators "^6.24.1"
+    babel-preset-stage-3 "^6.24.1"
+
+babel-preset-stage-3@^6.24.1:
+  version "6.24.1"
+  resolved "https://registry.yarnpkg.com/babel-preset-stage-3/-/babel-preset-stage-3-6.24.1.tgz#836ada0a9e7a7fa37cb138fb9326f87934a48395"
+  dependencies:
+    babel-plugin-syntax-trailing-function-commas "^6.22.0"
+    babel-plugin-transform-async-generator-functions "^6.24.1"
+    babel-plugin-transform-async-to-generator "^6.24.1"
+    babel-plugin-transform-exponentiation-operator "^6.24.1"
+    babel-plugin-transform-object-rest-spread "^6.22.0"
 
 babel-register@^6.26.0:
   version "6.26.0"
@@ -1010,6 +1905,10 @@ base64-js@^1.0.2:
   version "1.3.0"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.3.0.tgz#cab1e6118f051095e58b5281aea8c1cd22bfc0e3"
 
+base64url@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/base64url/-/base64url-3.0.0.tgz#f2ba30b15f80413d88e3e6116c4f3f7f61e28a2a"
+
 base@^0.11.1:
   version "0.11.2"
   resolved "https://registry.yarnpkg.com/base/-/base-0.11.2.tgz#7bde5ced145b6d551a90db87f83c558b4eb48a8f"
@@ -1039,6 +1938,10 @@ big.js@^3.1.3:
 binary-extensions@^1.0.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/binary-extensions/-/binary-extensions-1.12.0.tgz#c2d780f53d45bba8317a8902d4ceeaf3a6385b14"
+
+bindings@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/bindings/-/bindings-1.3.0.tgz#b346f6ecf6a95f5a815c5839fc7cdb22502f1ed7"
 
 bluebird@^3.4.7:
   version "3.5.2"
@@ -1197,6 +2100,13 @@ browserslist@^2.1.2, browserslist@^2.5.1:
     caniuse-lite "^1.0.30000792"
     electron-to-chromium "^1.3.30"
 
+browserslist@^3.2.6:
+  version "3.2.8"
+  resolved "https://registry.yarnpkg.com/browserslist/-/browserslist-3.2.8.tgz#b0005361d6471f0f5952797a76fc985f1f978fc6"
+  dependencies:
+    caniuse-lite "^1.0.30000844"
+    electron-to-chromium "^1.3.47"
+
 bser@1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/bser/-/bser-1.0.2.tgz#381116970b2a6deea5646dd15dd7278444b56169"
@@ -1315,6 +2225,10 @@ caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
 caniuse-lite@^1.0.30000748, caniuse-lite@^1.0.30000792:
   version "1.0.30000887"
   resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000887.tgz#1769458c27bbdcf61b0cb6b5072bb6cd11fd9c23"
+
+caniuse-lite@^1.0.30000844:
+  version "1.0.30000888"
+  resolved "https://registry.yarnpkg.com/caniuse-lite/-/caniuse-lite-1.0.30000888.tgz#22edb50d91dd70612b5898e3b36f460600c6492f"
 
 capture-stack-trace@^1.0.0:
   version "1.0.1"
@@ -1538,6 +2452,17 @@ commondir@^1.0.1:
 component-emitter@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/component-emitter/-/component-emitter-1.2.1.tgz#137918d6d78283f7df7a6b7c5a63e140e69425e6"
+
+componentsjs@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/componentsjs/-/componentsjs-3.1.0.tgz#0ea466d3d7d05a562ff1b39b5274983d4eca0554"
+  dependencies:
+    global-modules "^1.0.0"
+    jsonld "^0.4.11"
+    lodash "^4.17.4"
+    minimist "^1.2.0"
+    n3 "^0.9.1"
+    requireg "^0.1.7"
 
 compressible@~2.0.14:
   version "2.0.15"
@@ -1843,7 +2768,7 @@ date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
 
-debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9:
+debug@2.6.9, debug@^2.1.2, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.6, debug@^2.6.8, debug@^2.6.9, debug@~2:
   version "2.6.9"
   resolved "https://registry.yarnpkg.com/debug/-/debug-2.6.9.tgz#5d128515df134ff327e90a4c93f4e077a536341f"
   dependencies:
@@ -2116,7 +3041,11 @@ electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
   version "1.3.70"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.70.tgz#ded377256d92d81b4257d36c65aa890274afcfd2"
 
-elliptic@^6.0.0:
+electron-to-chromium@^1.3.47:
+  version "1.3.73"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.73.tgz#aa67787067d58cc3920089368b3b8d6fe0fc12f6"
+
+elliptic@^6.0.0, elliptic@^6.4.0:
   version "6.4.1"
   resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.4.1.tgz#c2d0b7776911b86722c632c3c06c60f2f819939a"
   dependencies:
@@ -2139,6 +3068,12 @@ emojis-list@^2.0.0:
 encodeurl@~1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
+
+encoding@^0.1.11:
+  version "0.1.12"
+  resolved "https://registry.yarnpkg.com/encoding/-/encoding-0.1.12.tgz#538b66f3ee62cd1ab51ec323829d1f9480c74beb"
+  dependencies:
+    iconv-lite "~0.4.13"
 
 enhanced-resolve@^3.4.0:
   version "3.4.1"
@@ -2165,7 +3100,7 @@ error-ex@^1.2.0:
   dependencies:
     is-arrayish "^0.2.1"
 
-es-abstract@^1.7.0:
+es-abstract@^1.5.1, es-abstract@^1.7.0:
   version "1.12.0"
   resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.12.0.tgz#9dbbdd27c6856f0001421ca18782d786bf8a6165"
   dependencies:
@@ -2209,6 +3144,10 @@ es6-map@^0.1.3:
     es6-set "~0.1.5"
     es6-symbol "~3.1.1"
     event-emitter "~0.3.5"
+
+es6-promise@^2.0.0:
+  version "2.3.0"
+  resolved "http://registry.npmjs.org/es6-promise/-/es6-promise-2.3.0.tgz#96edb9f2fdb01995822b263dd8aadab6748181bc"
 
 es6-promise@^4.0.5:
   version "4.2.5"
@@ -2646,6 +3585,21 @@ fb-watchman@^2.0.0:
   dependencies:
     bser "^2.0.0"
 
+fetch-sparql-endpoint@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/fetch-sparql-endpoint/-/fetch-sparql-endpoint-1.3.3.tgz#45882401a1d56449769bacb5e0281e2c5887df25"
+  dependencies:
+    is-stream "^1.1.0"
+    isomorphic-fetch "^2.2.1"
+    minimist "^1.2.0"
+    n3 "^1.0.0-beta.1"
+    node-web-streams "^0.2.2"
+    rdf-string "^1.2.0"
+    sparqljs "^2.0.3"
+    sparqljson-parse "^1.3.1"
+    sparqlxml-parse "^1.1.2"
+    stream-to-string "^1.1.0"
+
 figures@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/figures/-/figures-2.0.0.tgz#3ab1a2d2a62c8bfb431a0c94cb797a2fce27c962"
@@ -2754,7 +3708,7 @@ flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
 
-follow-redirects@^1.0.0:
+follow-redirects@^1.0.0, follow-redirects@^1.5.1:
   version "1.5.8"
   resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.5.8.tgz#1dbfe13e45ad969f813e86c00e5296f525c885a1"
   dependencies:
@@ -2973,6 +3927,21 @@ got@^6.7.1:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2, graceful-fs@^4.1.6, graceful-fs@^4.1.9:
   version "4.1.11"
   resolved "https://registry.yarnpkg.com/graceful-fs/-/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+graphql-to-sparql@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/graphql-to-sparql/-/graphql-to-sparql-1.3.2.tgz#5e73c98bfe56a6b987a1ee65c00eb33aa1b7a4fa"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    graphql "^14.0.0"
+    minimist "^1.2.0"
+    sparqlalgebrajs "^1.0.1"
+
+graphql@^14.0.0:
+  version "14.0.2"
+  resolved "https://registry.yarnpkg.com/graphql/-/graphql-14.0.2.tgz#7dded337a4c3fd2d075692323384034b357f5650"
+  dependencies:
+    iterall "^1.2.2"
 
 growly@^1.3.0:
   version "1.3.0"
@@ -3235,7 +4204,7 @@ iconv-lite@0.4.23:
   dependencies:
     safer-buffer ">= 2.1.2 < 3"
 
-iconv-lite@^0.4.17, iconv-lite@^0.4.4:
+iconv-lite@^0.4.17, iconv-lite@^0.4.4, iconv-lite@~0.4.13:
   version "0.4.24"
   resolved "https://registry.yarnpkg.com/iconv-lite/-/iconv-lite-0.4.24.tgz#2022b4b25fbddc21d2f524974a474aafe733908b"
   dependencies:
@@ -3264,6 +4233,14 @@ ignore-walk@^3.0.1:
 ignore@^3.3.3:
   version "3.3.10"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.10.tgz#0a97fb876986e8081c631160f8f9f389157f0043"
+
+immediate@^3.2.3:
+  version "3.2.3"
+  resolved "https://registry.yarnpkg.com/immediate/-/immediate-3.2.3.tgz#d140fa8f614659bd6541233097ddaac25cdd991c"
+
+immutable@^3.8.2:
+  version "3.8.2"
+  resolved "https://registry.yarnpkg.com/immutable/-/immutable-3.8.2.tgz#c2439951455bb39913daf281376f1530e104adf3"
 
 import-lazy@^2.1.0:
   version "2.1.0"
@@ -3595,7 +4572,7 @@ is-root@1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/is-root/-/is-root-1.0.0.tgz#07b6c233bc394cd9d02ba15c966bd6660d6342d5"
 
-is-stream@^1.0.0, is-stream@^1.1.0:
+is-stream@^1.0.0, is-stream@^1.0.1, is-stream@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
 
@@ -3648,6 +4625,13 @@ isobject@^2.0.0:
 isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/isobject/-/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
+
+isomorphic-fetch@^2.2.1:
+  version "2.2.1"
+  resolved "https://registry.yarnpkg.com/isomorphic-fetch/-/isomorphic-fetch-2.2.1.tgz#611ae1acf14f5e81f729507472819fe9733558a9"
+  dependencies:
+    node-fetch "^1.0.1"
+    whatwg-fetch ">=0.10.0"
 
 isstream@~0.1.2:
   version "0.1.2"
@@ -3715,6 +4699,10 @@ istanbul-reports@^1.5.1:
   resolved "https://registry.yarnpkg.com/istanbul-reports/-/istanbul-reports-1.5.1.tgz#97e4dbf3b515e8c484caea15d6524eebd3ff4e1a"
   dependencies:
     handlebars "^4.0.3"
+
+iterall@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
 
 jest-changed-files@^20.0.3:
   version "20.0.3"
@@ -4039,6 +5027,28 @@ jsonify@~0.0.0:
   version "0.0.0"
   resolved "https://registry.yarnpkg.com/jsonify/-/jsonify-0.0.0.tgz#2c74b6ee41d93ca51b7b5aaee8f503631d252a73"
 
+jsonld@^0.4.11:
+  version "0.4.12"
+  resolved "https://registry.yarnpkg.com/jsonld/-/jsonld-0.4.12.tgz#a02f205d5341414df1b6d8414f1b967a712073e8"
+  dependencies:
+    es6-promise "^2.0.0"
+    pkginfo "~0.4.0"
+    request "^2.61.0"
+    xmldom "0.1.19"
+
+jsonld@^1.0.2, jsonld@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/jsonld/-/jsonld-1.1.0.tgz#afcb168c44557a7bddead4d4513c3cbcae3bc5b9"
+  dependencies:
+    rdf-canonize "^0.2.1"
+    request "^2.83.0"
+    semver "^5.5.0"
+    xmldom "0.1.19"
+
+jsonparse@^1.2.0:
+  version "1.3.1"
+  resolved "https://registry.yarnpkg.com/jsonparse/-/jsonparse-1.3.1.tgz#3f4dae4a91fac315f71062f8521cc239f1366280"
+
 jsprim@^1.2.2:
   version "1.4.1"
   resolved "https://registry.yarnpkg.com/jsprim/-/jsprim-1.4.1.tgz#313e66bc1e5cc06e438bc1b7499c2e5c56acb6a2"
@@ -4103,6 +5113,18 @@ lcid@^1.0.0:
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
   dependencies:
     invert-kv "^1.0.0"
+
+ldflex-comunica@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ldflex-comunica/-/ldflex-comunica-0.1.0.tgz#ddd4464c681b556bcf597e54486529d6f526a8d7"
+  dependencies:
+    "@comunica/actor-init-sparql" "^1.3.0"
+
+ldflex@^0.1.0:
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/ldflex/-/ldflex-0.1.0.tgz#3f2833b6550b89b225544c48cc025d27f698c036"
+  dependencies:
+    jsonld "^1.1.0"
 
 leven@^2.1.0:
   version "2.1.0"
@@ -4177,6 +5199,10 @@ lodash._reinterpolate@~3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/lodash._reinterpolate/-/lodash._reinterpolate-3.0.0.tgz#0ccf2d89166af03b3663c796538b75ac6e114d9d"
 
+lodash.assign@^4.2.0:
+  version "4.2.0"
+  resolved "https://registry.yarnpkg.com/lodash.assign/-/lodash.assign-4.2.0.tgz#0d99f3ccd7a6d261d19bdaeb9245005d285808e7"
+
 lodash.camelcase@^4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/lodash.camelcase/-/lodash.camelcase-4.3.0.tgz#b28aa6288a2b9fc651035c7711f65ab6190331a6"
@@ -4193,9 +5219,41 @@ lodash.defaults@^4.2.0:
   version "4.2.0"
   resolved "https://registry.yarnpkg.com/lodash.defaults/-/lodash.defaults-4.2.0.tgz#d09178716ffea4dde9e5fb7b37f6f0802274580c"
 
+lodash.find@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.find/-/lodash.find-4.6.0.tgz#cb0704d47ab71789ffa0de8b97dd926fb88b13b1"
+
+lodash.flatten@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.flatten/-/lodash.flatten-4.4.0.tgz#f31c22225a9632d2bbf8e4addbef240aa765a61f"
+
+lodash.intersection@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.intersection/-/lodash.intersection-4.4.0.tgz#0a11ba631d0e95c23c7f2f4cbb9a692ed178e705"
+
+lodash.isequal@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.isequal/-/lodash.isequal-4.5.0.tgz#415c4478f2bcc30120c22ce10ed3226f7d3e18e0"
+
+lodash.map@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.map/-/lodash.map-4.6.0.tgz#771ec7839e3473d9c4cde28b19394c3562f4f6d3"
+
+lodash.mapvalues@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.mapvalues/-/lodash.mapvalues-4.6.0.tgz#1bafa5005de9dd6f4f26668c30ca37230cc9689c"
+
 lodash.memoize@^4.1.2:
   version "4.1.2"
   resolved "https://registry.yarnpkg.com/lodash.memoize/-/lodash.memoize-4.1.2.tgz#bcc6c49a42a2840ed997f323eada5ecd182e0bfe"
+
+lodash.omit@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.omit/-/lodash.omit-4.5.0.tgz#6eb19ae5a1ee1dd9df0b969e66ce0b7fa30b5e60"
+
+lodash.sortby@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/lodash.sortby/-/lodash.sortby-4.7.0.tgz#edd14c824e2cc9c1e0b0a1b42bb5210516a42438"
 
 lodash.template@^4.4.0:
   version "4.4.0"
@@ -4210,9 +5268,21 @@ lodash.templatesettings@^4.0.0:
   dependencies:
     lodash._reinterpolate "~3.0.0"
 
+lodash.union@^4.6.0:
+  version "4.6.0"
+  resolved "https://registry.yarnpkg.com/lodash.union/-/lodash.union-4.6.0.tgz#48bb5088409f16f1821666641c44dd1aaae3cd88"
+
 lodash.uniq@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
+
+lodash.uniqwith@^4.5.0:
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/lodash.uniqwith/-/lodash.uniqwith-4.5.0.tgz#7a0cbf65f43b5928625a9d4d0dc54b18cadc7ef3"
+
+lodash.values@^4.3.0:
+  version "4.3.0"
+  resolved "https://registry.yarnpkg.com/lodash.values/-/lodash.values-4.3.0.tgz#a3a6c2b0ebecc5c2cba1c17e6e620fe81b53d347"
 
 "lodash@>=3.5 <5", lodash@^4.15.0, lodash@^4.17.10, lodash@^4.17.2, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0:
   version "4.17.11"
@@ -4247,7 +5317,7 @@ lowercase-keys@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/lowercase-keys/-/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
 
-lru-cache@^4.0.1:
+lru-cache@^4.0.1, lru-cache@^4.1.1:
   version "4.1.3"
   resolved "https://registry.yarnpkg.com/lru-cache/-/lru-cache-4.1.3.tgz#a1175cf3496dfc8436c156c334b4955992bce69c"
   dependencies:
@@ -4485,6 +5555,18 @@ mute-stream@0.0.7:
   version "0.0.7"
   resolved "https://registry.yarnpkg.com/mute-stream/-/mute-stream-0.0.7.tgz#3075ce93bc21b8fab43e1bc4da7e8115ed1e7bab"
 
+n3@1.0.0-beta.2, n3@^1.0.0-beta.1:
+  version "1.0.0-beta.2"
+  resolved "https://registry.yarnpkg.com/n3/-/n3-1.0.0-beta.2.tgz#fc5cce503fce06048cbc1cd804ba086f2f643a41"
+
+n3@^0.9.1:
+  version "0.9.1"
+  resolved "https://registry.yarnpkg.com/n3/-/n3-0.9.1.tgz#430b547d58dc7381408c45784dd8058171903932"
+
+nan@^2.10.0:
+  version "2.11.1"
+  resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.1.tgz#90e22bccb8ca57ea4cd37cc83d3819b52eea6766"
+
 nan@^2.9.2:
   version "2.11.0"
   resolved "https://registry.yarnpkg.com/nan/-/nan-2.11.0.tgz#574e360e4d954ab16966ec102c0c049fd961a099"
@@ -4517,6 +5599,10 @@ needle@^2.2.1:
     iconv-lite "^0.4.4"
     sax "^1.2.4"
 
+negotiate@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/negotiate/-/negotiate-1.0.1.tgz#35ac8b5672f7b05faa10bf0261342eb1120370fd"
+
 negotiator@0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.1.tgz#2b327184e8992101177b28563fb5e7102acd0ca9"
@@ -4524,6 +5610,10 @@ negotiator@0.6.1:
 neo-async@^2.5.0:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.5.2.tgz#489105ce7bc54e709d736b195f82135048c50fcc"
+
+nested-error-stacks@~2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.0.1.tgz#d2cc9fc5235ddb371fc44d506234339c8e4b0a4b"
 
 next-tick@1:
   version "1.0.0"
@@ -4535,9 +5625,24 @@ no-case@^2.2.0:
   dependencies:
     lower-case "^1.1.1"
 
+node-fetch@^1.0.1:
+  version "1.7.3"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-1.7.3.tgz#980f6f72d85211a5347c6b2bc18c5b84c3eb47ef"
+  dependencies:
+    encoding "^0.1.11"
+    is-stream "^1.0.1"
+
+node-fetch@^2.1.2:
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.2.0.tgz#4ee79bde909262f9775f731e3656d0db55ced5b5"
+
 node-forge@0.7.5:
   version "0.7.5"
   resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.5.tgz#6c152c345ce11c52f465c2abd957e8639cd674df"
+
+node-forge@^0.7.1:
+  version "0.7.6"
+  resolved "https://registry.yarnpkg.com/node-forge/-/node-forge-0.7.6.tgz#fdf3b418aee1f94f0ef642cd63486c77ca9724ac"
 
 node-int64@^0.4.0:
   version "0.4.0"
@@ -4594,6 +5699,19 @@ node-pre-gyp@^0.10.0:
     rimraf "^2.6.1"
     semver "^5.3.0"
     tar "^4"
+
+node-rsa@^0.4.0:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/node-rsa/-/node-rsa-0.4.2.tgz#d6391729ec16a830ed5a38042b3157d2d5d72530"
+  dependencies:
+    asn1 "0.2.3"
+
+node-web-streams@^0.2.2:
+  version "0.2.2"
+  resolved "https://registry.yarnpkg.com/node-web-streams/-/node-web-streams-0.2.2.tgz#087e76bbeb7e8dc56686b25db4e60c5ff9db091f"
+  dependencies:
+    is-stream "^1.1.0"
+    web-streams-polyfill "git://github.com/gwicke/web-streams-polyfill#spec_performance_improvements"
 
 nopt@^4.0.1:
   version "4.0.1"
@@ -4703,6 +5821,13 @@ object-visit@^1.0.0:
   resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
   dependencies:
     isobject "^3.0.0"
+
+object.getownpropertydescriptors@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.0.3.tgz#8758c846f5b407adab0f236e0986f14b051caa16"
+  dependencies:
+    define-properties "^1.1.2"
+    es-abstract "^1.5.1"
 
 object.omit@^2.0.0:
   version "2.0.1"
@@ -4880,6 +6005,12 @@ parse-json@^2.2.0:
   dependencies:
     error-ex "^1.2.0"
 
+parse-link-header@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/parse-link-header/-/parse-link-header-1.0.1.tgz#bedfe0d2118aeb84be75e7b025419ec8a61140a7"
+  dependencies:
+    xtend "~4.0.1"
+
 parse-passwd@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/parse-passwd/-/parse-passwd-1.0.0.tgz#6d5b934a456993b23d37f40a382d6f1666a8e5c6"
@@ -4997,6 +6128,10 @@ pkg-dir@^2.0.0:
   resolved "https://registry.yarnpkg.com/pkg-dir/-/pkg-dir-2.0.0.tgz#f6d5d1109e19d63edf428e0bd57e12777615334b"
   dependencies:
     find-up "^2.1.0"
+
+pkginfo@~0.4.0:
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/pkginfo/-/pkginfo-0.4.1.tgz#b5418ef0439de5425fc4995042dced14fb2a84ff"
 
 pluralize@^7.0.0:
   version "7.0.0"
@@ -5343,6 +6478,10 @@ progress@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.0.tgz#8a1be366bf8fc23db2bd23f10c6fe920b4389d1f"
 
+promise-polyfill@^1.1.6:
+  version "1.1.6"
+  resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-1.1.6.tgz#cd04eff46f5c95c3a7d045591d79b5e3e01f12d7"
+
 promise@8.0.1:
   version "8.0.1"
   resolved "https://registry.yarnpkg.com/promise/-/promise-8.0.1.tgz#e45d68b00a17647b6da711bf85ed6ed47208f450"
@@ -5468,7 +6607,7 @@ raw-body@2.3.2:
     iconv-lite "0.4.19"
     unpipe "1.0.0"
 
-rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
+rc@^1.0.1, rc@^1.1.6, rc@^1.2.7, rc@~1.2.7:
   version "1.2.8"
   resolved "https://registry.yarnpkg.com/rc/-/rc-1.2.8.tgz#cd924bf5200a075b83c188cd6b9e211b7fc0d3ed"
   dependencies:
@@ -5476,6 +6615,35 @@ rc@^1.0.1, rc@^1.1.6, rc@^1.2.7:
     ini "~1.3.0"
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
+
+rdf-canonize@^0.2.1:
+  version "0.2.4"
+  resolved "https://registry.yarnpkg.com/rdf-canonize/-/rdf-canonize-0.2.4.tgz#1b46eb01500b6800348ac5fe0953c1be226b1446"
+  dependencies:
+    bindings "^1.3.0"
+    nan "^2.10.0"
+    node-forge "^0.7.1"
+    semver "^5.4.1"
+
+rdf-string@^1.1.1, rdf-string@^1.2.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/rdf-string/-/rdf-string-1.2.0.tgz#25cd45ab168c8ed1cde62eb64ac3c2291fc551c0"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+
+rdf-terms@^1.1.0, rdf-terms@^1.2.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/rdf-terms/-/rdf-terms-1.3.0.tgz#7dd7b396402aa5c6d26bef99c00d7e10f5944410"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    lodash.uniqwith "^4.5.0"
+
+rdfxml-streaming-parser@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/rdfxml-streaming-parser/-/rdfxml-streaming-parser-1.0.0.tgz#8ede93047c699821747bb40540bf914dc7c63a28"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    sax "^1.2.4"
 
 react-dev-utils@^5.0.2:
   version "5.0.2"
@@ -5679,6 +6847,10 @@ regenerator-runtime@^0.11.0:
   version "0.11.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.11.1.tgz#be05ad7f9bf7d22e056f9726cee5017fbf19e2e9"
 
+regenerator-runtime@^0.12.0:
+  version "0.12.1"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
+
 regenerator-transform@^0.10.0:
   version "0.10.1"
   resolved "https://registry.yarnpkg.com/regenerator-transform/-/regenerator-transform-0.10.1.tgz#1e4996837231da8b7f3cf4114d71b5691a0680dd"
@@ -5771,7 +6943,7 @@ repeating@^2.0.0:
   dependencies:
     is-finite "^1.0.0"
 
-request@^2.79.0:
+request@^2.61.0, request@^2.79.0, request@^2.83.0:
   version "2.88.0"
   resolved "https://registry.yarnpkg.com/request/-/request-2.88.0.tgz#9c2fca4f7d35b592efe57c7f0a55e81052124fef"
   dependencies:
@@ -5815,6 +6987,14 @@ require-uncached@^1.0.3:
     caller-path "^0.1.0"
     resolve-from "^1.0.0"
 
+requireg@^0.1.7:
+  version "0.1.8"
+  resolved "https://registry.yarnpkg.com/requireg/-/requireg-0.1.8.tgz#75c1d495294fa5ddfd51e4fcca4965c44f1ed8b1"
+  dependencies:
+    nested-error-stacks "~2.0.1"
+    rc "~1.2.7"
+    resolve "~1.7.1"
+
 requires-port@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/requires-port/-/requires-port-1.0.0.tgz#925d2601d39ac485e091cf0da5c6e694dc3dcaff"
@@ -5857,6 +7037,12 @@ resolve@1.6.0:
 resolve@^1.3.2, resolve@^1.5.0:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.8.1.tgz#82f1ec19a423ac1fbd080b0bab06ba36e84a7a26"
+  dependencies:
+    path-parse "^1.0.5"
+
+resolve@~1.7.1:
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/resolve/-/resolve-1.7.1.tgz#aadd656374fd298aee895bc026b8297418677fd3"
   dependencies:
     path-parse "^1.0.5"
 
@@ -5936,7 +7122,14 @@ sane@~1.6.0:
     walker "~1.0.5"
     watch "~0.10.0"
 
-sax@^1.2.1, sax@^1.2.4, sax@~1.2.1:
+sax-stream@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/sax-stream/-/sax-stream-1.2.3.tgz#5f6b08f26a5a1bb8afa86c1723545fd36831beae"
+  dependencies:
+    debug "~2"
+    sax "~1"
+
+sax@^1.2.1, sax@^1.2.4, sax@~1, sax@~1.2.1:
   version "1.2.4"
   resolved "https://registry.yarnpkg.com/sax/-/sax-1.2.4.tgz#2816234e2378bddc4e5354fab5caa895df7100d9"
 
@@ -5968,7 +7161,7 @@ semver-diff@^2.0.0:
   dependencies:
     semver "^5.0.3"
 
-"semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1:
+"semver@2 || 3 || 4 || 5", semver@^5.0.3, semver@^5.1.0, semver@^5.3.0, semver@^5.4.1, semver@^5.5.0:
   version "5.5.1"
   resolved "https://registry.yarnpkg.com/semver/-/semver-5.5.1.tgz#7dfdd8814bdb7cabc7be0fb1d734cfb66c940477"
 
@@ -6138,6 +7331,17 @@ sockjs@0.3.19:
     faye-websocket "^0.10.0"
     uuid "^3.0.1"
 
+solid-auth-client@^2.2.3:
+  version "2.2.6"
+  resolved "https://registry.yarnpkg.com/solid-auth-client/-/solid-auth-client-2.2.6.tgz#5b5bb2730e3ced010f1608083a11841b05ad4ba2"
+  dependencies:
+    "@babel/runtime" "^7.0.0"
+    "@solid/oidc-rp" "^0.8.0"
+    auth-header "^1.0.0"
+    commander "^2.11.0"
+    isomorphic-fetch "^2.2.1"
+    uuid "^3.1.0"
+
 sort-keys@^1.0.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/sort-keys/-/sort-keys-1.1.2.tgz#441b6d4d346798f1b4e49e8920adfba0e543f9ad"
@@ -6175,6 +7379,40 @@ source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7, source-map@~0.5.1:
 source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
   version "0.6.1"
   resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
+
+sparqlalgebrajs@^1.0.1, sparqlalgebrajs@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/sparqlalgebrajs/-/sparqlalgebrajs-1.1.0.tgz#684f023905ddd4bb895c3c7b3686ab2c816cd1fb"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    lodash.isequal "^4.5.0"
+    minimist "^1.2.0"
+    rdf-string "^1.2.0"
+    sparqljs "^2.0.3"
+
+sparqljs@^2.0.3:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/sparqljs/-/sparqljs-2.1.0.tgz#4c53bd4dcc9ec1e9a851201c654c4e2adbb42f45"
+
+sparqljson-parse@^1.3.1:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/sparqljson-parse/-/sparqljson-parse-1.4.0.tgz#14b92ce94a486e33114b0f34fa6dcf9cb033a275"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    JSONStream "^1.3.3"
+
+sparqljson-to-tree@^1.2.3:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/sparqljson-to-tree/-/sparqljson-to-tree-1.2.3.tgz#169e24ea2eeb5b169f597a54419bf3c2d0c935f8"
+  dependencies:
+    sparqljson-parse "^1.3.1"
+
+sparqlxml-parse@^1.1.2:
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/sparqlxml-parse/-/sparqlxml-parse-1.1.3.tgz#7d3cf0169b9ffd6442333cc21b8e624619794100"
+  dependencies:
+    "@rdfjs/data-model" "^1.1.0"
+    sax-stream "^1.2.3"
 
 spdx-correct@^3.0.0:
   version "3.0.0"
@@ -6246,6 +7484,16 @@ sshpk@^1.7.0:
     jsbn "~0.1.0"
     tweetnacl "~0.14.0"
 
+"standard-error@>= 1.1.0 < 2":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/standard-error/-/standard-error-1.1.0.tgz#23e5168fa1c0820189e5812701a79058510d0d34"
+
+standard-http-error@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/standard-http-error/-/standard-http-error-2.0.1.tgz#f8ae9172e3cef9cb38d2e7084a1925f57a7c34bd"
+  dependencies:
+    standard-error ">= 1.1.0 < 2"
+
 static-extend@^0.1.1:
   version "0.1.2"
   resolved "https://registry.yarnpkg.com/static-extend/-/static-extend-0.1.2.tgz#60809c39cbff55337226fd5e0b520f341f1fb5c6"
@@ -6277,6 +7525,20 @@ stream-http@^2.7.2:
     readable-stream "^2.3.6"
     to-arraybuffer "^1.0.0"
     xtend "^4.0.0"
+
+stream-to-string@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/stream-to-string/-/stream-to-string-1.1.0.tgz#39210b01317e6abb35e854538e013037b6a35940"
+  dependencies:
+    promise-polyfill "^1.1.6"
+
+streamify-array@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/streamify-array/-/streamify-array-1.0.1.tgz#741cd1e7eaf1d451a0da484e5dc986a76dfa479c"
+
+streamify-string@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/streamify-string/-/streamify-string-1.0.1.tgz#9e220de33e1c475dd30e0206f5b1815cc6c9525b"
 
 strict-uri-encode@^1.0.0:
   version "1.1.0"
@@ -6471,6 +7733,10 @@ test-exclude@^4.2.1:
     read-pkg-up "^1.0.1"
     require-main-filename "^1.0.1"
 
+text-encoding@^0.6.1, text-encoding@^0.6.4:
+  version "0.6.4"
+  resolved "http://registry.npmjs.org/text-encoding/-/text-encoding-0.6.4.tgz#e399a982257a276dae428bb92845cb71bdc26d19"
+
 text-table@0.2.0, text-table@~0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/text-table/-/text-table-0.2.0.tgz#7f5ee823ae805207c00af2df4a84ec3fcfa570b4"
@@ -6479,7 +7745,7 @@ throat@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/throat/-/throat-3.2.0.tgz#50cb0670edbc40237b9e347d7e1f88e4620af836"
 
-through@^2.3.6:
+"through@>=2.2.7 <3", through@^2.3.6:
   version "2.3.8"
   resolved "http://registry.npmjs.org/through/-/through-2.3.8.tgz#0dd4c9ffaabc357960b1b724115d7e0e86a2e1f5"
 
@@ -6551,6 +7817,12 @@ tough-cookie@^2.3.2, tough-cookie@~2.4.3:
   dependencies:
     psl "^1.1.24"
     punycode "^1.4.1"
+
+tr46@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/tr46/-/tr46-1.0.1.tgz#a8b13fd6bfd2489519674ccde55ba3693b706d09"
+  dependencies:
+    punycode "^2.1.0"
 
 tr46@~0.0.3:
   version "0.0.3"
@@ -6698,6 +7970,10 @@ urijs@^1.16.1:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/urijs/-/urijs-1.19.1.tgz#5b0ff530c0cbde8386f6342235ba5ca6e995d25a"
 
+uritemplate@0.3.4:
+  version "0.3.4"
+  resolved "https://registry.yarnpkg.com/uritemplate/-/uritemplate-0.3.4.tgz#05d0a853ffbc8b0f49aa3d4d2ad777b0d1ee070c"
+
 urix@^0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/urix/-/urix-0.1.0.tgz#da937f7a62e21fec1fd18d49b35c2935067a6c72"
@@ -6738,6 +8014,13 @@ util-deprecate@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
 
+util.promisify@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/util.promisify/-/util.promisify-1.0.0.tgz#440f7165a459c9a16dc145eb8e72f35687097030"
+  dependencies:
+    define-properties "^1.1.2"
+    object.getownpropertydescriptors "^2.0.3"
+
 util@0.10.3:
   version "0.10.3"
   resolved "https://registry.yarnpkg.com/util/-/util-0.10.3.tgz#7afb1afe50805246489e3db7fe0ed379336ac0f9"
@@ -6762,7 +8045,7 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/utils-merge/-/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
-uuid@^3.0.1, uuid@^3.3.2:
+uuid@^3.0.1, uuid@^3.1.0, uuid@^3.3.2:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
 
@@ -6819,11 +8102,15 @@ wbuf@^1.1.0, wbuf@^1.7.2:
   dependencies:
     minimalistic-assert "^1.0.0"
 
+"web-streams-polyfill@git://github.com/gwicke/web-streams-polyfill#spec_performance_improvements":
+  version "1.2.2"
+  resolved "git://github.com/gwicke/web-streams-polyfill#42c488428adea1dc0c0245014e4896ad456b1ded"
+
 webidl-conversions@^3.0.0:
   version "3.0.1"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-3.0.1.tgz#24534275e2a7bc6be7bc86611cc16ae0a5654871"
 
-webidl-conversions@^4.0.0:
+webidl-conversions@^4.0.0, webidl-conversions@^4.0.2:
   version "4.0.2"
   resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
 
@@ -6931,12 +8218,24 @@ whatwg-fetch@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-2.0.3.tgz#9c84ec2dcf68187ff00bc64e1274b442176e1c84"
 
+whatwg-fetch@>=0.10.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/whatwg-fetch/-/whatwg-fetch-3.0.0.tgz#fc804e458cc460009b1a2b966bc8817d2578aefb"
+
 whatwg-url@^4.3.0:
   version "4.8.0"
   resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-4.8.0.tgz#d2981aa9148c1e00a41c5a6131166ab4683bbcc0"
   dependencies:
     tr46 "~0.0.3"
     webidl-conversions "^3.0.0"
+
+whatwg-url@^6.4.1:
+  version "6.5.0"
+  resolved "https://registry.yarnpkg.com/whatwg-url/-/whatwg-url-6.5.0.tgz#f2df02bff176fd65070df74ad5ccbb5a199965a8"
+  dependencies:
+    lodash.sortby "^4.7.0"
+    tr46 "^1.0.1"
+    webidl-conversions "^4.0.2"
 
 whet.extend@~0.9.9:
   version "0.9.9"
@@ -7023,7 +8322,15 @@ xml-name-validator@^2.0.1:
   version "2.0.1"
   resolved "https://registry.yarnpkg.com/xml-name-validator/-/xml-name-validator-2.0.1.tgz#4d8b8f1eccd3419aa362061becef515e1e559635"
 
-xtend@^4.0.0:
+xml@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/xml/-/xml-1.0.1.tgz#78ba72020029c5bc87b8a81a3cfcd74b4a2fc1e5"
+
+xmldom@0.1.19:
+  version "0.1.19"
+  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.19.tgz#631fc07776efd84118bf25171b37ed4d075a0abc"
+
+xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.1"
   resolved "https://registry.yarnpkg.com/xtend/-/xtend-4.0.1.tgz#a5c6d532be656e23db820efb943a1f04998d63af"
 
