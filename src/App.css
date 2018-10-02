@@ -1,0 +1,64 @@
+body {
+  background: #ccc;
+
+}
+.App {
+  padding: 30px;
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px 0;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+.theList{
+margin: auto;
+  width: 250px;
+  padding: 20px 0;
+}
+
+.theList li {
+  color: #333;
+  background-color: rgba(255,255,255,.5);
+  padding: 15px 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  transition: background-color .2s ease-out;
+  cursor: pointer;
+  list-style: none;
+}
+
+.theList li:hover {
+  background-color: pink;
+}
+input {
+  padding: 10px;
+  font-size: 14px;
+}
+button {
+  background: crimson;
+  padding: 9px;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
