@@ -1,0 +1,5 @@
+BMK:
+
+What I find interesting with the react-redux bindings is that although they seem weird at first,
+but the distinction between presentational and container components makes sense when you consider that
+you really want to be able to access the redux store more or less _anywhere_ in your container hierarchy.
