@@ -6,13 +6,7 @@ import App from './components/App';
 import rootReducer from './reducers';
 
 // We can set initial state and pass it straight into the createStore method.
-// @TODO: Add in some asynchronous axios calls as part of w2. 
-const initialState = {
-  todosReducer: [
-    {id:1, text:'This is a todo', completed: false},
-    {id:2, text:'This is another todo', completed: false}
-  ]
-};
+const initialState = {};
 
 // The store will hold the complete state of the whole app in a tree-like
 // architecture.

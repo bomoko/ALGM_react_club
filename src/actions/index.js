@@ -6,9 +6,8 @@
 // Type is typically written in all caps and typically describes semantically
 // what the action does.
 
-// Set initial todo id. We need to set it to 3 as there is already 2 Todos
-// passed directly into the store as initial state.
-let todoId = 3;
+// Set initial todo id.
+let todoId = 0;
 
 // Define ADD_TODO action type, update the ID by one and pass the todo text.
 // TYPE: type of action.
@@ -32,9 +31,28 @@ export const toggleTodo = (id) => ({
   id
 });
 
+const recieveTodos = (todos, json) => ({
+  type: 'RECEIVE_TODOS',
+  todos: json.data.children.map(child => child.data)
+});
+
 // Store the types of action name filters as constants (looking).
 export const ToggleActionFilters = {
   SHOW_ALL: 'SHOW_ALL',
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_TODO: 'SHOW_TODO'
 };
+
+export const fetchTodos = (todos) => {
+  return (dispatch) => {
+    // Fetch data and dispatch recieveTodos if no errors
+    return fetch(`http://www.mocky.io/v2/5bb782e53000006b00f93a83`)
+      .then(
+        response => response.json(),
+        error => console.log('Error: ', error)
+      )
+      .then(
+        json => dispatch(recieveTodos(todos, json))
+      )
+  }
+}

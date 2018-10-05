@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux';
+import fetchTodos from './fetchTodos';
 import todosReducer from './todosReducer';
 import toggleFiltersReducer from './toggleFiltersReducer';
 
@@ -9,6 +10,7 @@ import toggleFiltersReducer from './toggleFiltersReducer';
 // the mapStateToProps functions. This then completes the redux loop of managing
 // state.
 export default combineReducers({
+  fetchTodos,
   todosReducer,
   toggleFiltersReducer
 });
