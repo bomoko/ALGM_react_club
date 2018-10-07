@@ -1,8 +1,10 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import { addTodo } from '../actions';
+import { getNextTodoID } from '../actions';
 
-const AddTodo = ({ dispatch }) => {
+const AddTodo = ({ dispatch, addToDo, totalTodos }) => {
+
   let input;
 
   return (
@@ -14,8 +16,11 @@ const AddTodo = ({ dispatch }) => {
         if (!input.value.trim()) {
           return;
         }
+
+        let nextID = totalTodos++ + 1;
         // Dispatch the state of the input through the addToDo action.
-        dispatch(addTodo(input.value));
+        dispatch(addTodo(input.value, nextID));
+
         // Reset the input value to empty.
         input.value = '';
       }}>
@@ -28,4 +33,10 @@ const AddTodo = ({ dispatch }) => {
   );
 }
 
-export default connect()(AddTodo);
+const mapStateToProps = (state) => {
+  return {
+    totalTodos: state.fetchTodos.totalTodos,
+  }
+};
+
+export default connect(mapStateToProps)(AddTodo);

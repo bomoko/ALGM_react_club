@@ -8,8 +8,7 @@ import { ToggleActionFilters } from '../actions';
 const toggleFiltersReducer = (state = ToggleActionFilters.SHOW_ALL, action) => {
   switch (action.type) {
     case 'SET_TOGGLE_FILTER':
-    // console.log(action.filter);
-    // Return filter state.
+      // Return filter state.
       return action.filter
     default:
       return state

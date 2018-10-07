@@ -13,9 +13,9 @@ let todoId = 0;
 // TYPE: type of action.
 // ID: the payload - generate a new ID so each todo is unique.
 // TEXT: the text given in each todo.
-export const addTodo = (text) => ({
+export const addTodo = (text, id) => ({
   type: 'ADD_TODO',
-  id: todoId++, // It is best practice to avoid adding too much logic here.
+  id: id++, // It is best practice to avoid adding too much logic here.
   text
 });
 
@@ -33,7 +33,13 @@ export const toggleTodo = (id) => ({
 
 const recieveTodos = (todos, json) => ({
   type: 'RECEIVE_TODOS',
-  todos: json.data.children.map(child => child.data)
+  countTodos: Object.keys(json).length,
+  todos: json.map(child => child)
+});
+
+export const updateTodos = (todos) => ({
+  type: 'UPDATE_TODOS',
+  todos: todos
 });
 
 // Store the types of action name filters as constants (looking).
@@ -42,6 +48,11 @@ export const ToggleActionFilters = {
   SHOW_COMPLETED: 'SHOW_COMPLETED',
   SHOW_TODO: 'SHOW_TODO'
 };
+
+export const getNextTodoID = (totalTodos) => ({
+  type: 'GET_NEXT_TODO_ID',
+  nextID: totalTodos++
+});
 
 export const fetchTodos = (todos) => {
   return (dispatch) => {

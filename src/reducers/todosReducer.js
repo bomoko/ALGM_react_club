@@ -23,6 +23,8 @@ const todosReducer = (state = [], action) => {
         }
       ];
     case 'TOGGLE_TODO':
+    console.log(action);
+    
       return state.map(todo =>
         // Ternary operator - iterate through todoes and if ids match, then
         // take current state and return todo state as not completed. Else return
