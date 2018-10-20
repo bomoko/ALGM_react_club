@@ -21,7 +21,7 @@ const typeDefs = `
     # The mutation root type, used to define all mutations.
     type Mutation {
       # A mutation to add a new todo to the list of todos
-      addTodo(text: String!): Todo
+      CreateTodoMutation(text: String!): Todo
     }
     `;
 

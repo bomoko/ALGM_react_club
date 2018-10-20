@@ -26,9 +26,9 @@ export const resolvers = {
     },
   },
   Mutation: {
-    addTodo: (root, args) => {
+    CreateTodoMutation: (root, args) => {
       const newTodo = { id: nextId++, text: args.text, checked: false };
-      todo.push(newTodo);
+      todos.push(newTodo);
       return newTodo;
     },
   },

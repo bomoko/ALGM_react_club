@@ -13,24 +13,8 @@ class TodoItem extends Component {
           &nbsp;{this.props.text}
         </label>
       </li>
-    )
+    );
   }
 }
 
 export default TodoItem;
-
-// This is a function attempt
-// import React from 'react';
-
-// const TodoItem = ({ itemData, onChange }) => {
-//   return (
-//     <li>
-//       <label>
-//         <input type="checkbox" checked={itemData.checked} onChange={onChange}/>
-//         &nbsp;{itemData.text}
-//       </label>
-//     </li>
-//   );
-// };
-
-// export default TodoItem;

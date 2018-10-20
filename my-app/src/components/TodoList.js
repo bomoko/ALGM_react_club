@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import TodoItem from './TodoItem';
-import TodoInput from './TodoInput';
+import CreateTodoWithMutation from './TodoInput';
 
 class TodoList extends Component {
 
@@ -10,22 +10,17 @@ class TodoList extends Component {
     checkedValue: '',
   };
 
-  onInputChange = event =>
-    this.setState({
-      inputValue: event.target.value
-    });
-
-  // Add an item
-  addItem = (event) => {
-    event.preventDefault();
-    this.setState({
-      items: this.state.items.concat([{
-        text: this.state.inputValue,
-        checked: false,
-      }]),
-      inputValue: '',
-    });
-  }
+  // Add an item - Moves to component with Mutation
+  // addItem = (event) => {
+  //   event.preventDefault();
+  //   this.setState({
+  //     items: this.state.items.concat([{
+  //       text: this.state.inputValue,
+  //       checked: false,
+  //     }]),
+  //     inputValue: '',
+  //   });
+  // }
 
   // Check an item
   checkItem = (text) => {
@@ -61,9 +56,7 @@ class TodoList extends Component {
           </ul>
         </form>
 
-        <form onSubmit={this.addItem}>
-          <TodoInput value={inputValue} onChange={this.onInputChange} />
-        </form>
+        <CreateTodoWithMutation inValue={inputValue} />
       </div>
     );
   }
