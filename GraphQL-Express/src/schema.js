@@ -6,7 +6,7 @@ import { resolvers } from './resolvers';
 
 const typeDefs = `
     type Todo {
-      id: ID                # "!" denotes a required field
+      id: String                # "!" denotes a required field
       text: String
       checked: Boolean
     }
@@ -21,7 +21,8 @@ const typeDefs = `
     # The mutation root type, used to define all mutations.
     type Mutation {
       # A mutation to add a new todo to the list of todos
-      CreateTodoMutation(text: String!): Todo
+      createTodoMutation(text: String!): Todo
+      doCheckboxMutation(id: ID!, text: String!, checked: Boolean): Todo
     }
     `;
 

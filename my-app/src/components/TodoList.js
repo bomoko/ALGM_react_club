@@ -1,65 +1,43 @@
-import React, { Component } from 'react';
+// https://codesandbox.io/s/v3mn68xxvy
+
+import React from 'react';
+import { Query } from 'react-apollo';
+import TODO_LIST_QUERY from './Queries';
 import TodoItem from './TodoItem';
-import CreateTodoWithMutation from './TodoInput';
+import TodoInput from './TodoInput';
 
-class TodoList extends Component {
+const TodoList = () => (
+  // Render prop
+  <Query query={TODO_LIST_QUERY}>
+    {({ loading, error, data }) => {
+      if (loading) return <p>Loading...</p>;
+      if (error) return <p>Error :(</p>;
 
-  state = {
-    items: this.props.items,
-    inputValue: '',
-    checkedValue: '',
-  };
+      let input;
 
-  // Add an item - Moves to component with Mutation
-  // addItem = (event) => {
-  //   event.preventDefault();
-  //   this.setState({
-  //     items: this.state.items.concat([{
-  //       text: this.state.inputValue,
-  //       checked: false,
-  //     }]),
-  //     inputValue: '',
-  //   });
-  // }
+      return (
+        <div>
+          <form>
+            <ul>
+              {data.todos.map(
+                (item, index) => (
+                  <TodoItem
+                    key={index}
+                    text={item.text}
+                    checked={item.checked}
+                    id={item.id}
+                  />
+                )
+              )}
+            </ul>
+          </form>
 
-  // Check an item
-  checkItem = (text) => {
-    this.setState({
-      items: this.state.items.map(item => {
-        if (item.text !== text) return item;
-
-        return {
-          ...item,
-          checked: !item.checked,
-        };
-      }),
-    });
-  }
-
-  render() {
-    const { inputValue, items } = this.state;
-
-    return (
-      <div>
-        <form>
-          <ul>
-            {items.map(
-              (item, index) => (
-                <TodoItem
-                  key={index}
-                  text={item.text}
-                  checked={item.checked}
-                  onClick={this.checkItem}
-                />
-              )
-            )}
-          </ul>
-        </form>
-
-        <CreateTodoWithMutation inValue={inputValue} />
-      </div>
-    );
-  }
-}
+          <TodoInput inValue={input} />
+        </div>
+      );
+      //});
+    }}
+  </Query>
+);
 
 export default TodoList;

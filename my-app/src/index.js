@@ -21,6 +21,6 @@ render(
     <div className="App">
       <App />
     </div>
-  </ApolloProvider>, app)
-// ReactDOM.render(<App />, document.getElementById('root'));
+  </ApolloProvider>, app);
+
 registerServiceWorker();

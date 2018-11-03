@@ -1,20 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import TodoListData from './endpoint/data';
-import {graphql} from 'react-apollo';
-import gql from 'graphql-tag';
-
 import TodoList from './components/TodoList';
 
-const App = ({ data: { loading, error, todos } }) => {
 
-  if (loading) {
-    return <p>Loading ...</p>;
-  }
-  if (error) {
-    return <p>{error.message}</p>;
-  }
+const App = () => {
 
   return (
     <div className="App">
@@ -28,23 +18,12 @@ const App = ({ data: { loading, error, todos } }) => {
           What do you need to do?
         </p>
 
-        <TodoList items={todos} />
+        <TodoList />
 
       </main>
     </div>
   );
 };
 
-const todoListQuery = gql `
-  query TodoListQuery {
-    todos {
-      id
-      text
-      checked
-    }
-  }
-`;
+export default App;
 
-const AppWithData = graphql(todoListQuery)(App);
-
-export default AppWithData;
